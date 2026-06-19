@@ -1,0 +1,3095 @@
+{
+  "text": "第一,最重要的是梳理知识点。我们要知道，一切的题目都是围绕着那些最基础的概念和知识点来展开的。做题的目的，是为了巩固和掌握知识点。\n\n所以，每天花十分钟，合上书，凭记忆画出章节的思维导图。每个知识点，在脑海中我们要给它配一套典型的例题，或者自己做错的错题，这样就能把知识点和题目对照起来。同时，我们再对照课本查漏补缺，把零散的知识编成完整的体系。\n\n哪怕考场上题型翻新，你也能快速地定位考点，不会因为题目陌生就彻底卡壳，能够守住基础分数。\n\n第二，练习计算。\n\n考场上很多无谓的失分都和计算失误有关。练习的时候，我们要规范草稿推演的流程，做到可回溯、可验算。每次出错，记录出错的原因，反复做有针对性的训练，把计算变成稳定的习惯。\n\n另外，计算出错往往是因为我们心里着急，这个时候一定要稳住节奏。还有很多同学计算错误，是因为对计算的原理、算理和算法不清楚。这个时候，我们要把和计算相关的一些知识点掌握得更好。\n\n第三，针对薄弱点分层刷题。\n\n不要盲目地刷整套试卷，而是要找到你的短板，比如不太会的做题思路，或者不太会做的题型。找到短板之后，每三到五题为一组，由浅入深地做递进式训练。那些反复出错的题目，隔几天我们再来复盘。\n\n这样主动攻克自身的漏洞，就算试卷的难度超出预期，那些基础题和中档题也能稳稳地拿分。遇到难题的时候，那些难题的思路其实也是从中档题一步步变形而来的。当你把中档题的思路刷扎实，遇到难题也能做出前面的一部分。\n\n我们强调系统性的刻意练习。这种练习的本质，并不是保证每一场考试都能拿高分，而是把漫无目的的苦学转化成稳定发挥的体系。\n\n数学考题永远存在变数，但扎实的知识框架、稳定的做题习惯，能帮我们对冲大部分的考试风险。",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "audio": "math-study.mp3",
+  "words": [
+    {
+      "text": "第一",
+      "start": 0.1,
+      "end": 0.5375,
+      "duration": 0.4375,
+      "start_char": 0,
+      "end_char": 2
+    },
+    {
+      "text": "最",
+      "start": 0.875,
+      "end": 1.1,
+      "duration": 0.225,
+      "start_char": 3,
+      "end_char": 4
+    },
+    {
+      "text": "重要",
+      "start": 1.1,
+      "end": 1.4,
+      "duration": 0.3,
+      "start_char": 4,
+      "end_char": 6
+    },
+    {
+      "text": "的",
+      "start": 1.4,
+      "end": 1.525,
+      "duration": 0.125,
+      "start_char": 6,
+      "end_char": 7
+    },
+    {
+      "text": "是",
+      "start": 1.525,
+      "end": 1.85,
+      "duration": 0.325,
+      "start_char": 7,
+      "end_char": 8
+    },
+    {
+      "text": "梳理",
+      "start": 1.9375,
+      "end": 2.325,
+      "duration": 0.3875,
+      "start_char": 8,
+      "end_char": 10
+    },
+    {
+      "text": "知识点",
+      "start": 2.3375,
+      "end": 2.95,
+      "duration": 0.6125,
+      "start_char": 10,
+      "end_char": 13
+    },
+    {
+      "text": "我们",
+      "start": 3.525,
+      "end": 3.7375,
+      "duration": 0.2125,
+      "start_char": 14,
+      "end_char": 16
+    },
+    {
+      "text": "要",
+      "start": 3.75,
+      "end": 3.9125,
+      "duration": 0.1625,
+      "start_char": 16,
+      "end_char": 17
+    },
+    {
+      "text": "知道",
+      "start": 3.9125,
+      "end": 4.3625,
+      "duration": 0.45,
+      "start_char": 17,
+      "end_char": 19
+    },
+    {
+      "text": "一切",
+      "start": 4.675,
+      "end": 5.0375,
+      "duration": 0.3625,
+      "start_char": 20,
+      "end_char": 22
+    },
+    {
+      "text": "的",
+      "start": 5.0375,
+      "end": 5.125,
+      "duration": 0.0875,
+      "start_char": 22,
+      "end_char": 23
+    },
+    {
+      "text": "题目",
+      "start": 5.1375,
+      "end": 5.675,
+      "duration": 0.5375,
+      "start_char": 23,
+      "end_char": 25
+    },
+    {
+      "text": "都",
+      "start": 5.775,
+      "end": 5.9375,
+      "duration": 0.1625,
+      "start_char": 25,
+      "end_char": 26
+    },
+    {
+      "text": "是",
+      "start": 5.9375,
+      "end": 6.0625,
+      "duration": 0.125,
+      "start_char": 26,
+      "end_char": 27
+    },
+    {
+      "text": "围绕",
+      "start": 6.075,
+      "end": 6.4375,
+      "duration": 0.3625,
+      "start_char": 27,
+      "end_char": 29
+    },
+    {
+      "text": "着",
+      "start": 6.4375,
+      "end": 6.5375,
+      "duration": 0.1,
+      "start_char": 29,
+      "end_char": 30
+    },
+    {
+      "text": "那些",
+      "start": 6.55,
+      "end": 6.9,
+      "duration": 0.35,
+      "start_char": 30,
+      "end_char": 32
+    },
+    {
+      "text": "最",
+      "start": 6.925,
+      "end": 7.175,
+      "duration": 0.25,
+      "start_char": 32,
+      "end_char": 33
+    },
+    {
+      "text": "基础",
+      "start": 7.175,
+      "end": 7.5125,
+      "duration": 0.3375,
+      "start_char": 33,
+      "end_char": 35
+    },
+    {
+      "text": "的",
+      "start": 7.5125,
+      "end": 7.6,
+      "duration": 0.0875,
+      "start_char": 35,
+      "end_char": 36
+    },
+    {
+      "text": "概念",
+      "start": 7.6125,
+      "end": 8.0,
+      "duration": 0.3875,
+      "start_char": 36,
+      "end_char": 38
+    },
+    {
+      "text": "和",
+      "start": 8.025,
+      "end": 8.15,
+      "duration": 0.125,
+      "start_char": 38,
+      "end_char": 39
+    },
+    {
+      "text": "知识点",
+      "start": 8.1625,
+      "end": 8.6625,
+      "duration": 0.5,
+      "start_char": 39,
+      "end_char": 42
+    },
+    {
+      "text": "来",
+      "start": 8.6875,
+      "end": 8.825,
+      "duration": 0.1375,
+      "start_char": 42,
+      "end_char": 43
+    },
+    {
+      "text": "展开",
+      "start": 8.8375,
+      "end": 9.2875,
+      "duration": 0.45,
+      "start_char": 43,
+      "end_char": 45
+    },
+    {
+      "text": "的",
+      "start": 9.2875,
+      "end": 9.475,
+      "duration": 0.1875,
+      "start_char": 45,
+      "end_char": 46
+    },
+    {
+      "text": "做",
+      "start": 10.0375,
+      "end": 10.275,
+      "duration": 0.2375,
+      "start_char": 47,
+      "end_char": 48
+    },
+    {
+      "text": "题",
+      "start": 10.275,
+      "end": 10.45,
+      "duration": 0.175,
+      "start_char": 48,
+      "end_char": 49
+    },
+    {
+      "text": "的",
+      "start": 10.45,
+      "end": 10.5375,
+      "duration": 0.0875,
+      "start_char": 49,
+      "end_char": 50
+    },
+    {
+      "text": "目的",
+      "start": 10.55,
+      "end": 11.025,
+      "duration": 0.475,
+      "start_char": 50,
+      "end_char": 52
+    },
+    {
+      "text": "是",
+      "start": 11.25,
+      "end": 11.4125,
+      "duration": 0.1625,
+      "start_char": 53,
+      "end_char": 54
+    },
+    {
+      "text": "为了",
+      "start": 11.4125,
+      "end": 11.65,
+      "duration": 0.2375,
+      "start_char": 54,
+      "end_char": 56
+    },
+    {
+      "text": "巩固",
+      "start": 11.6625,
+      "end": 12.2,
+      "duration": 0.5375,
+      "start_char": 56,
+      "end_char": 58
+    },
+    {
+      "text": "和",
+      "start": 12.225,
+      "end": 12.3625,
+      "duration": 0.1375,
+      "start_char": 58,
+      "end_char": 59
+    },
+    {
+      "text": "掌握",
+      "start": 12.375,
+      "end": 12.7,
+      "duration": 0.325,
+      "start_char": 59,
+      "end_char": 61
+    },
+    {
+      "text": "知识点",
+      "start": 12.7125,
+      "end": 13.35,
+      "duration": 0.6375,
+      "start_char": 61,
+      "end_char": 64
+    },
+    {
+      "text": "所以",
+      "start": 13.925,
+      "end": 14.4375,
+      "duration": 0.5125,
+      "start_char": 67,
+      "end_char": 69
+    },
+    {
+      "text": "每天",
+      "start": 14.8125,
+      "end": 15.1875,
+      "duration": 0.375,
+      "start_char": 70,
+      "end_char": 72
+    },
+    {
+      "text": "花",
+      "start": 15.2,
+      "end": 15.3875,
+      "duration": 0.1875,
+      "start_char": 72,
+      "end_char": 73
+    },
+    {
+      "text": "十分钟",
+      "start": 15.3875,
+      "end": 16.05,
+      "duration": 0.6625,
+      "start_char": 73,
+      "end_char": 76
+    },
+    {
+      "text": "合",
+      "start": 16.2375,
+      "end": 16.375,
+      "duration": 0.1375,
+      "start_char": 77,
+      "end_char": 78
+    },
+    {
+      "text": "上书",
+      "start": 16.3875,
+      "end": 16.9125,
+      "duration": 0.525,
+      "start_char": 78,
+      "end_char": 80
+    },
+    {
+      "text": "凭",
+      "start": 17.2375,
+      "end": 17.475,
+      "duration": 0.2375,
+      "start_char": 81,
+      "end_char": 82
+    },
+    {
+      "text": "记忆",
+      "start": 17.4875,
+      "end": 17.7875,
+      "duration": 0.3,
+      "start_char": 82,
+      "end_char": 84
+    },
+    {
+      "text": "画",
+      "start": 17.7875,
+      "end": 17.9875,
+      "duration": 0.2,
+      "start_char": 84,
+      "end_char": 85
+    },
+    {
+      "text": "出",
+      "start": 17.9875,
+      "end": 18.15,
+      "duration": 0.1625,
+      "start_char": 85,
+      "end_char": 86
+    },
+    {
+      "text": "章节",
+      "start": 18.1625,
+      "end": 18.55,
+      "duration": 0.3875,
+      "start_char": 86,
+      "end_char": 88
+    },
+    {
+      "text": "的",
+      "start": 18.55,
+      "end": 18.6375,
+      "duration": 0.0875,
+      "start_char": 88,
+      "end_char": 89
+    },
+    {
+      "text": "思维",
+      "start": 18.6625,
+      "end": 18.975,
+      "duration": 0.3125,
+      "start_char": 89,
+      "end_char": 91
+    },
+    {
+      "text": "导图",
+      "start": 18.9875,
+      "end": 19.55,
+      "duration": 0.5625,
+      "start_char": 91,
+      "end_char": 93
+    },
+    {
+      "text": "每个",
+      "start": 20.125,
+      "end": 20.425,
+      "duration": 0.3,
+      "start_char": 94,
+      "end_char": 96
+    },
+    {
+      "text": "知识点",
+      "start": 20.4375,
+      "end": 21.0375,
+      "duration": 0.6,
+      "start_char": 96,
+      "end_char": 99
+    },
+    {
+      "text": "在",
+      "start": 21.375,
+      "end": 21.5375,
+      "duration": 0.1625,
+      "start_char": 100,
+      "end_char": 101
+    },
+    {
+      "text": "脑海",
+      "start": 21.55,
+      "end": 21.95,
+      "duration": 0.4,
+      "start_char": 101,
+      "end_char": 103
+    },
+    {
+      "text": "中",
+      "start": 21.95,
+      "end": 22.3125,
+      "duration": 0.3625,
+      "start_char": 103,
+      "end_char": 104
+    },
+    {
+      "text": "我们",
+      "start": 22.4125,
+      "end": 22.625,
+      "duration": 0.2125,
+      "start_char": 104,
+      "end_char": 106
+    },
+    {
+      "text": "要",
+      "start": 22.6375,
+      "end": 22.8,
+      "duration": 0.1625,
+      "start_char": 106,
+      "end_char": 107
+    },
+    {
+      "text": "给",
+      "start": 22.8,
+      "end": 22.9375,
+      "duration": 0.1375,
+      "start_char": 107,
+      "end_char": 108
+    },
+    {
+      "text": "它",
+      "start": 22.95,
+      "end": 23.0875,
+      "duration": 0.1375,
+      "start_char": 108,
+      "end_char": 109
+    },
+    {
+      "text": "配",
+      "start": 23.0875,
+      "end": 23.25,
+      "duration": 0.1625,
+      "start_char": 109,
+      "end_char": 110
+    },
+    {
+      "text": "一套",
+      "start": 23.2625,
+      "end": 23.5625,
+      "duration": 0.3,
+      "start_char": 110,
+      "end_char": 112
+    },
+    {
+      "text": "典型",
+      "start": 23.5875,
+      "end": 24.0125,
+      "duration": 0.425,
+      "start_char": 112,
+      "end_char": 114
+    },
+    {
+      "text": "的",
+      "start": 24.0125,
+      "end": 24.1125,
+      "duration": 0.1,
+      "start_char": 114,
+      "end_char": 115
+    },
+    {
+      "text": "例题",
+      "start": 24.125,
+      "end": 24.6375,
+      "duration": 0.5125,
+      "start_char": 115,
+      "end_char": 117
+    },
+    {
+      "text": "或者",
+      "start": 24.925,
+      "end": 25.2,
+      "duration": 0.275,
+      "start_char": 118,
+      "end_char": 120
+    },
+    {
+      "text": "自己",
+      "start": 25.2125,
+      "end": 25.5,
+      "duration": 0.2875,
+      "start_char": 120,
+      "end_char": 122
+    },
+    {
+      "text": "做错",
+      "start": 25.5125,
+      "end": 25.95,
+      "duration": 0.4375,
+      "start_char": 122,
+      "end_char": 124
+    },
+    {
+      "text": "的",
+      "start": 25.95,
+      "end": 26.0375,
+      "duration": 0.0875,
+      "start_char": 124,
+      "end_char": 125
+    },
+    {
+      "text": "错题",
+      "start": 26.05,
+      "end": 26.5625,
+      "duration": 0.5125,
+      "start_char": 125,
+      "end_char": 127
+    },
+    {
+      "text": "这样",
+      "start": 26.775,
+      "end": 27.2,
+      "duration": 0.425,
+      "start_char": 128,
+      "end_char": 130
+    },
+    {
+      "text": "就",
+      "start": 27.2125,
+      "end": 27.325,
+      "duration": 0.1125,
+      "start_char": 130,
+      "end_char": 131
+    },
+    {
+      "text": "能",
+      "start": 27.3375,
+      "end": 27.45,
+      "duration": 0.1125,
+      "start_char": 131,
+      "end_char": 132
+    },
+    {
+      "text": "把",
+      "start": 27.45,
+      "end": 27.5875,
+      "duration": 0.1375,
+      "start_char": 132,
+      "end_char": 133
+    },
+    {
+      "text": "知识点",
+      "start": 27.6125,
+      "end": 28.175,
+      "duration": 0.5625,
+      "start_char": 133,
+      "end_char": 136
+    },
+    {
+      "text": "和",
+      "start": 28.2,
+      "end": 28.3375,
+      "duration": 0.1375,
+      "start_char": 136,
+      "end_char": 137
+    },
+    {
+      "text": "题目",
+      "start": 28.35,
+      "end": 28.7,
+      "duration": 0.35,
+      "start_char": 137,
+      "end_char": 139
+    },
+    {
+      "text": "对照",
+      "start": 28.725,
+      "end": 29.1,
+      "duration": 0.375,
+      "start_char": 139,
+      "end_char": 141
+    },
+    {
+      "text": "起来",
+      "start": 29.1125,
+      "end": 29.5125,
+      "duration": 0.4,
+      "start_char": 141,
+      "end_char": 143
+    },
+    {
+      "text": "同时",
+      "start": 30.0875,
+      "end": 30.6375,
+      "duration": 0.55,
+      "start_char": 144,
+      "end_char": 146
+    },
+    {
+      "text": "我们",
+      "start": 30.9375,
+      "end": 31.15,
+      "duration": 0.2125,
+      "start_char": 147,
+      "end_char": 149
+    },
+    {
+      "text": "再",
+      "start": 31.1625,
+      "end": 31.325,
+      "duration": 0.1625,
+      "start_char": 149,
+      "end_char": 150
+    },
+    {
+      "text": "对照",
+      "start": 31.325,
+      "end": 31.7,
+      "duration": 0.375,
+      "start_char": 150,
+      "end_char": 152
+    },
+    {
+      "text": "课本",
+      "start": 31.7125,
+      "end": 32.125,
+      "duration": 0.4125,
+      "start_char": 152,
+      "end_char": 154
+    },
+    {
+      "text": "查漏补缺",
+      "start": 32.15,
+      "end": 33.025,
+      "duration": 0.875,
+      "start_char": 154,
+      "end_char": 158
+    },
+    {
+      "text": "把",
+      "start": 33.3375,
+      "end": 33.4875,
+      "duration": 0.15,
+      "start_char": 159,
+      "end_char": 160
+    },
+    {
+      "text": "零散",
+      "start": 33.5,
+      "end": 33.8625,
+      "duration": 0.3625,
+      "start_char": 160,
+      "end_char": 162
+    },
+    {
+      "text": "的",
+      "start": 33.8625,
+      "end": 33.9375,
+      "duration": 0.075,
+      "start_char": 162,
+      "end_char": 163
+    },
+    {
+      "text": "知识",
+      "start": 33.95,
+      "end": 34.475,
+      "duration": 0.525,
+      "start_char": 163,
+      "end_char": 165
+    },
+    {
+      "text": "编成",
+      "start": 34.575,
+      "end": 34.9375,
+      "duration": 0.3625,
+      "start_char": 165,
+      "end_char": 167
+    },
+    {
+      "text": "完整",
+      "start": 34.9625,
+      "end": 35.3625,
+      "duration": 0.4,
+      "start_char": 167,
+      "end_char": 169
+    },
+    {
+      "text": "的",
+      "start": 35.3625,
+      "end": 35.45,
+      "duration": 0.0875,
+      "start_char": 169,
+      "end_char": 170
+    },
+    {
+      "text": "体系",
+      "start": 35.4625,
+      "end": 35.9875,
+      "duration": 0.525,
+      "start_char": 170,
+      "end_char": 172
+    },
+    {
+      "text": "哪怕",
+      "start": 36.55,
+      "end": 36.85,
+      "duration": 0.3,
+      "start_char": 175,
+      "end_char": 177
+    },
+    {
+      "text": "考场",
+      "start": 36.875,
+      "end": 37.275,
+      "duration": 0.4,
+      "start_char": 177,
+      "end_char": 179
+    },
+    {
+      "text": "上",
+      "start": 37.2875,
+      "end": 37.5,
+      "duration": 0.2125,
+      "start_char": 179,
+      "end_char": 180
+    },
+    {
+      "text": "题型",
+      "start": 37.5,
+      "end": 37.85,
+      "duration": 0.35,
+      "start_char": 180,
+      "end_char": 182
+    },
+    {
+      "text": "翻新",
+      "start": 37.8625,
+      "end": 38.3125,
+      "duration": 0.45,
+      "start_char": 182,
+      "end_char": 184
+    },
+    {
+      "text": "你",
+      "start": 38.675,
+      "end": 38.75,
+      "duration": 0.075,
+      "start_char": 185,
+      "end_char": 186
+    },
+    {
+      "text": "也",
+      "start": 38.7625,
+      "end": 38.8625,
+      "duration": 0.1,
+      "start_char": 186,
+      "end_char": 187
+    },
+    {
+      "text": "能",
+      "start": 38.8625,
+      "end": 39.025,
+      "duration": 0.1625,
+      "start_char": 187,
+      "end_char": 188
+    },
+    {
+      "text": "快速",
+      "start": 39.05,
+      "end": 39.4625,
+      "duration": 0.4125,
+      "start_char": 188,
+      "end_char": 190
+    },
+    {
+      "text": "地",
+      "start": 39.4625,
+      "end": 39.55,
+      "duration": 0.0875,
+      "start_char": 190,
+      "end_char": 191
+    },
+    {
+      "text": "定位",
+      "start": 39.575,
+      "end": 39.8375,
+      "duration": 0.2625,
+      "start_char": 191,
+      "end_char": 193
+    },
+    {
+      "text": "考点",
+      "start": 39.85,
+      "end": 40.3625,
+      "duration": 0.5125,
+      "start_char": 193,
+      "end_char": 195
+    },
+    {
+      "text": "不会",
+      "start": 40.7125,
+      "end": 41.0,
+      "duration": 0.2875,
+      "start_char": 196,
+      "end_char": 198
+    },
+    {
+      "text": "因为",
+      "start": 41.0125,
+      "end": 41.3125,
+      "duration": 0.3,
+      "start_char": 198,
+      "end_char": 200
+    },
+    {
+      "text": "题目",
+      "start": 41.3375,
+      "end": 41.6375,
+      "duration": 0.3,
+      "start_char": 200,
+      "end_char": 202
+    },
+    {
+      "text": "陌生",
+      "start": 41.65,
+      "end": 42.1875,
+      "duration": 0.5375,
+      "start_char": 202,
+      "end_char": 204
+    },
+    {
+      "text": "就",
+      "start": 42.2875,
+      "end": 42.4375,
+      "duration": 0.15,
+      "start_char": 204,
+      "end_char": 205
+    },
+    {
+      "text": "彻底",
+      "start": 42.45,
+      "end": 42.8375,
+      "duration": 0.3875,
+      "start_char": 205,
+      "end_char": 207
+    },
+    {
+      "text": "卡壳",
+      "start": 42.85,
+      "end": 43.4,
+      "duration": 0.55,
+      "start_char": 207,
+      "end_char": 209
+    },
+    {
+      "text": "能够",
+      "start": 43.6,
+      "end": 43.925,
+      "duration": 0.325,
+      "start_char": 210,
+      "end_char": 212
+    },
+    {
+      "text": "守",
+      "start": 43.9375,
+      "end": 44.1625,
+      "duration": 0.225,
+      "start_char": 212,
+      "end_char": 213
+    },
+    {
+      "text": "住",
+      "start": 44.1625,
+      "end": 44.35,
+      "duration": 0.1875,
+      "start_char": 213,
+      "end_char": 214
+    },
+    {
+      "text": "基础",
+      "start": 44.375,
+      "end": 44.7375,
+      "duration": 0.3625,
+      "start_char": 214,
+      "end_char": 216
+    },
+    {
+      "text": "分数",
+      "start": 44.75,
+      "end": 45.275,
+      "duration": 0.525,
+      "start_char": 216,
+      "end_char": 218
+    },
+    {
+      "text": "第二",
+      "start": 45.85,
+      "end": 46.2625,
+      "duration": 0.4125,
+      "start_char": 221,
+      "end_char": 223
+    },
+    {
+      "text": "练习",
+      "start": 46.5625,
+      "end": 46.9375,
+      "duration": 0.375,
+      "start_char": 224,
+      "end_char": 226
+    },
+    {
+      "text": "计算",
+      "start": 46.95,
+      "end": 47.4375,
+      "duration": 0.4875,
+      "start_char": 226,
+      "end_char": 228
+    },
+    {
+      "text": "考场",
+      "start": 48.0125,
+      "end": 48.4375,
+      "duration": 0.425,
+      "start_char": 231,
+      "end_char": 233
+    },
+    {
+      "text": "上",
+      "start": 48.4375,
+      "end": 48.6375,
+      "duration": 0.2,
+      "start_char": 233,
+      "end_char": 234
+    },
+    {
+      "text": "很多",
+      "start": 48.6625,
+      "end": 48.9875,
+      "duration": 0.325,
+      "start_char": 234,
+      "end_char": 236
+    },
+    {
+      "text": "无谓",
+      "start": 49.0,
+      "end": 49.3125,
+      "duration": 0.3125,
+      "start_char": 236,
+      "end_char": 238
+    },
+    {
+      "text": "的",
+      "start": 49.3125,
+      "end": 49.3875,
+      "duration": 0.075,
+      "start_char": 238,
+      "end_char": 239
+    },
+    {
+      "text": "失分",
+      "start": 49.4,
+      "end": 49.9,
+      "duration": 0.5,
+      "start_char": 239,
+      "end_char": 241
+    },
+    {
+      "text": "都",
+      "start": 50.0,
+      "end": 50.175,
+      "duration": 0.175,
+      "start_char": 241,
+      "end_char": 242
+    },
+    {
+      "text": "和",
+      "start": 50.175,
+      "end": 50.3125,
+      "duration": 0.1375,
+      "start_char": 242,
+      "end_char": 243
+    },
+    {
+      "text": "计算",
+      "start": 50.325,
+      "end": 50.6625,
+      "duration": 0.3375,
+      "start_char": 243,
+      "end_char": 245
+    },
+    {
+      "text": "失误",
+      "start": 50.675,
+      "end": 50.975,
+      "duration": 0.3,
+      "start_char": 245,
+      "end_char": 247
+    },
+    {
+      "text": "有关",
+      "start": 50.9875,
+      "end": 51.4375,
+      "duration": 0.45,
+      "start_char": 247,
+      "end_char": 249
+    },
+    {
+      "text": "练习",
+      "start": 52.0125,
+      "end": 52.4125,
+      "duration": 0.4,
+      "start_char": 250,
+      "end_char": 252
+    },
+    {
+      "text": "的",
+      "start": 52.4125,
+      "end": 52.5125,
+      "duration": 0.1,
+      "start_char": 252,
+      "end_char": 253
+    },
+    {
+      "text": "时候",
+      "start": 52.525,
+      "end": 53.0125,
+      "duration": 0.4875,
+      "start_char": 253,
+      "end_char": 255
+    },
+    {
+      "text": "我们",
+      "start": 53.2875,
+      "end": 53.4875,
+      "duration": 0.2,
+      "start_char": 256,
+      "end_char": 258
+    },
+    {
+      "text": "要",
+      "start": 53.4875,
+      "end": 53.6375,
+      "duration": 0.15,
+      "start_char": 258,
+      "end_char": 259
+    },
+    {
+      "text": "规范",
+      "start": 53.65,
+      "end": 54.05,
+      "duration": 0.4,
+      "start_char": 259,
+      "end_char": 261
+    },
+    {
+      "text": "草稿",
+      "start": 54.075,
+      "end": 54.4375,
+      "duration": 0.3625,
+      "start_char": 261,
+      "end_char": 263
+    },
+    {
+      "text": "推演",
+      "start": 54.45,
+      "end": 54.8375,
+      "duration": 0.3875,
+      "start_char": 263,
+      "end_char": 265
+    },
+    {
+      "text": "的",
+      "start": 54.8375,
+      "end": 54.9125,
+      "duration": 0.075,
+      "start_char": 265,
+      "end_char": 266
+    },
+    {
+      "text": "流程",
+      "start": 54.925,
+      "end": 55.4625,
+      "duration": 0.5375,
+      "start_char": 266,
+      "end_char": 268
+    },
+    {
+      "text": "做到",
+      "start": 55.675,
+      "end": 56.025,
+      "duration": 0.35,
+      "start_char": 269,
+      "end_char": 271
+    },
+    {
+      "text": "可",
+      "start": 56.05,
+      "end": 56.2125,
+      "duration": 0.1625,
+      "start_char": 271,
+      "end_char": 272
+    },
+    {
+      "text": "回溯",
+      "start": 56.2125,
+      "end": 56.775,
+      "duration": 0.5625,
+      "start_char": 272,
+      "end_char": 274
+    },
+    {
+      "text": "可",
+      "start": 56.975,
+      "end": 57.1625,
+      "duration": 0.1875,
+      "start_char": 275,
+      "end_char": 276
+    },
+    {
+      "text": "验算",
+      "start": 57.1625,
+      "end": 57.7625,
+      "duration": 0.6,
+      "start_char": 276,
+      "end_char": 278
+    },
+    {
+      "text": "每次",
+      "start": 58.325,
+      "end": 58.725,
+      "duration": 0.4,
+      "start_char": 279,
+      "end_char": 281
+    },
+    {
+      "text": "出错",
+      "start": 58.7375,
+      "end": 59.25,
+      "duration": 0.5125,
+      "start_char": 281,
+      "end_char": 283
+    },
+    {
+      "text": "记录",
+      "start": 59.5375,
+      "end": 59.8625,
+      "duration": 0.325,
+      "start_char": 284,
+      "end_char": 286
+    },
+    {
+      "text": "出错",
+      "start": 59.8875,
+      "end": 60.25,
+      "duration": 0.3625,
+      "start_char": 286,
+      "end_char": 288
+    },
+    {
+      "text": "的",
+      "start": 60.25,
+      "end": 60.3375,
+      "duration": 0.0875,
+      "start_char": 288,
+      "end_char": 289
+    },
+    {
+      "text": "原因",
+      "start": 60.35,
+      "end": 60.85,
+      "duration": 0.5,
+      "start_char": 289,
+      "end_char": 291
+    },
+    {
+      "text": "反复",
+      "start": 61.1125,
+      "end": 61.575,
+      "duration": 0.4625,
+      "start_char": 292,
+      "end_char": 294
+    },
+    {
+      "text": "做",
+      "start": 61.5875,
+      "end": 61.7625,
+      "duration": 0.175,
+      "start_char": 294,
+      "end_char": 295
+    },
+    {
+      "text": "有",
+      "start": 61.7625,
+      "end": 61.9,
+      "duration": 0.1375,
+      "start_char": 295,
+      "end_char": 296
+    },
+    {
+      "text": "针对性",
+      "start": 61.9125,
+      "end": 62.475,
+      "duration": 0.5625,
+      "start_char": 296,
+      "end_char": 299
+    },
+    {
+      "text": "的",
+      "start": 62.475,
+      "end": 62.55,
+      "duration": 0.075,
+      "start_char": 299,
+      "end_char": 300
+    },
+    {
+      "text": "训练",
+      "start": 62.5625,
+      "end": 63.05,
+      "duration": 0.4875,
+      "start_char": 300,
+      "end_char": 302
+    },
+    {
+      "text": "把",
+      "start": 63.3375,
+      "end": 63.4875,
+      "duration": 0.15,
+      "start_char": 303,
+      "end_char": 304
+    },
+    {
+      "text": "计算",
+      "start": 63.5,
+      "end": 63.925,
+      "duration": 0.425,
+      "start_char": 304,
+      "end_char": 306
+    },
+    {
+      "text": "变成",
+      "start": 63.9375,
+      "end": 64.275,
+      "duration": 0.3375,
+      "start_char": 306,
+      "end_char": 308
+    },
+    {
+      "text": "稳定",
+      "start": 64.3,
+      "end": 64.7125,
+      "duration": 0.4125,
+      "start_char": 308,
+      "end_char": 310
+    },
+    {
+      "text": "的",
+      "start": 64.7125,
+      "end": 64.7875,
+      "duration": 0.075,
+      "start_char": 310,
+      "end_char": 311
+    },
+    {
+      "text": "习惯",
+      "start": 64.8,
+      "end": 65.3,
+      "duration": 0.5,
+      "start_char": 311,
+      "end_char": 313
+    },
+    {
+      "text": "另外",
+      "start": 65.875,
+      "end": 66.275,
+      "duration": 0.4,
+      "start_char": 316,
+      "end_char": 318
+    },
+    {
+      "text": "计算",
+      "start": 66.6375,
+      "end": 66.9875,
+      "duration": 0.35,
+      "start_char": 319,
+      "end_char": 321
+    },
+    {
+      "text": "出错",
+      "start": 67.0,
+      "end": 67.55,
+      "duration": 0.55,
+      "start_char": 321,
+      "end_char": 323
+    },
+    {
+      "text": "往往",
+      "start": 67.6375,
+      "end": 67.925,
+      "duration": 0.2875,
+      "start_char": 323,
+      "end_char": 325
+    },
+    {
+      "text": "是",
+      "start": 67.9375,
+      "end": 68.0625,
+      "duration": 0.125,
+      "start_char": 325,
+      "end_char": 326
+    },
+    {
+      "text": "因为",
+      "start": 68.0625,
+      "end": 68.5625,
+      "duration": 0.5,
+      "start_char": 326,
+      "end_char": 328
+    },
+    {
+      "text": "我们",
+      "start": 68.6625,
+      "end": 68.85,
+      "duration": 0.1875,
+      "start_char": 328,
+      "end_char": 330
+    },
+    {
+      "text": "心里",
+      "start": 68.8625,
+      "end": 69.125,
+      "duration": 0.2625,
+      "start_char": 330,
+      "end_char": 332
+    },
+    {
+      "text": "着急",
+      "start": 69.1375,
+      "end": 69.6875,
+      "duration": 0.55,
+      "start_char": 332,
+      "end_char": 334
+    },
+    {
+      "text": "这个",
+      "start": 70.075,
+      "end": 70.35,
+      "duration": 0.275,
+      "start_char": 335,
+      "end_char": 337
+    },
+    {
+      "text": "时候",
+      "start": 70.3625,
+      "end": 70.8375,
+      "duration": 0.475,
+      "start_char": 337,
+      "end_char": 339
+    },
+    {
+      "text": "一定",
+      "start": 70.9375,
+      "end": 71.2,
+      "duration": 0.2625,
+      "start_char": 339,
+      "end_char": 341
+    },
+    {
+      "text": "要",
+      "start": 71.2,
+      "end": 71.35,
+      "duration": 0.15,
+      "start_char": 341,
+      "end_char": 342
+    },
+    {
+      "text": "稳住",
+      "start": 71.375,
+      "end": 71.7,
+      "duration": 0.325,
+      "start_char": 342,
+      "end_char": 344
+    },
+    {
+      "text": "节奏",
+      "start": 71.7125,
+      "end": 72.175,
+      "duration": 0.4625,
+      "start_char": 344,
+      "end_char": 346
+    },
+    {
+      "text": "还有",
+      "start": 72.7375,
+      "end": 73.0375,
+      "duration": 0.3,
+      "start_char": 347,
+      "end_char": 349
+    },
+    {
+      "text": "很多",
+      "start": 73.05,
+      "end": 73.4125,
+      "duration": 0.3625,
+      "start_char": 349,
+      "end_char": 351
+    },
+    {
+      "text": "同学",
+      "start": 73.425,
+      "end": 73.8375,
+      "duration": 0.4125,
+      "start_char": 351,
+      "end_char": 353
+    },
+    {
+      "text": "计算",
+      "start": 73.8625,
+      "end": 74.175,
+      "duration": 0.3125,
+      "start_char": 353,
+      "end_char": 355
+    },
+    {
+      "text": "错误",
+      "start": 74.1875,
+      "end": 74.6625,
+      "duration": 0.475,
+      "start_char": 355,
+      "end_char": 357
+    },
+    {
+      "text": "是",
+      "start": 74.9625,
+      "end": 75.1,
+      "duration": 0.1375,
+      "start_char": 358,
+      "end_char": 359
+    },
+    {
+      "text": "因为",
+      "start": 75.1,
+      "end": 75.4375,
+      "duration": 0.3375,
+      "start_char": 359,
+      "end_char": 361
+    },
+    {
+      "text": "对",
+      "start": 75.4625,
+      "end": 75.625,
+      "duration": 0.1625,
+      "start_char": 361,
+      "end_char": 362
+    },
+    {
+      "text": "计算",
+      "start": 75.6375,
+      "end": 75.975,
+      "duration": 0.3375,
+      "start_char": 362,
+      "end_char": 364
+    },
+    {
+      "text": "的",
+      "start": 75.975,
+      "end": 76.0625,
+      "duration": 0.0875,
+      "start_char": 364,
+      "end_char": 365
+    },
+    {
+      "text": "原理",
+      "start": 76.075,
+      "end": 76.6,
+      "duration": 0.525,
+      "start_char": 365,
+      "end_char": 367
+    },
+    {
+      "text": "算理",
+      "start": 76.8125,
+      "end": 77.2375,
+      "duration": 0.425,
+      "start_char": 368,
+      "end_char": 370
+    },
+    {
+      "text": "和",
+      "start": 77.2625,
+      "end": 77.375,
+      "duration": 0.1125,
+      "start_char": 370,
+      "end_char": 371
+    },
+    {
+      "text": "算法",
+      "start": 77.3875,
+      "end": 77.75,
+      "duration": 0.3625,
+      "start_char": 371,
+      "end_char": 373
+    },
+    {
+      "text": "不",
+      "start": 77.775,
+      "end": 77.8875,
+      "duration": 0.1125,
+      "start_char": 373,
+      "end_char": 374
+    },
+    {
+      "text": "清楚",
+      "start": 77.8875,
+      "end": 78.4375,
+      "duration": 0.55,
+      "start_char": 374,
+      "end_char": 376
+    },
+    {
+      "text": "这个",
+      "start": 79.0,
+      "end": 79.3,
+      "duration": 0.3,
+      "start_char": 377,
+      "end_char": 379
+    },
+    {
+      "text": "时候",
+      "start": 79.3125,
+      "end": 79.8125,
+      "duration": 0.5,
+      "start_char": 379,
+      "end_char": 381
+    },
+    {
+      "text": "我们",
+      "start": 80.0625,
+      "end": 80.2625,
+      "duration": 0.2,
+      "start_char": 382,
+      "end_char": 384
+    },
+    {
+      "text": "要",
+      "start": 80.275,
+      "end": 80.4375,
+      "duration": 0.1625,
+      "start_char": 384,
+      "end_char": 385
+    },
+    {
+      "text": "把",
+      "start": 80.4375,
+      "end": 80.5625,
+      "duration": 0.125,
+      "start_char": 385,
+      "end_char": 386
+    },
+    {
+      "text": "和",
+      "start": 80.5875,
+      "end": 80.7375,
+      "duration": 0.15,
+      "start_char": 386,
+      "end_char": 387
+    },
+    {
+      "text": "计算",
+      "start": 80.7375,
+      "end": 81.125,
+      "duration": 0.3875,
+      "start_char": 387,
+      "end_char": 389
+    },
+    {
+      "text": "相关",
+      "start": 81.1375,
+      "end": 81.525,
+      "duration": 0.3875,
+      "start_char": 389,
+      "end_char": 391
+    },
+    {
+      "text": "的",
+      "start": 81.525,
+      "end": 81.6,
+      "duration": 0.075,
+      "start_char": 391,
+      "end_char": 392
+    },
+    {
+      "text": "一些",
+      "start": 81.6125,
+      "end": 81.9,
+      "duration": 0.2875,
+      "start_char": 392,
+      "end_char": 394
+    },
+    {
+      "text": "知识点",
+      "start": 81.9125,
+      "end": 82.5625,
+      "duration": 0.65,
+      "start_char": 394,
+      "end_char": 397
+    },
+    {
+      "text": "掌握",
+      "start": 82.6625,
+      "end": 83.0375,
+      "duration": 0.375,
+      "start_char": 397,
+      "end_char": 399
+    },
+    {
+      "text": "得",
+      "start": 83.0375,
+      "end": 83.125,
+      "duration": 0.0875,
+      "start_char": 399,
+      "end_char": 400
+    },
+    {
+      "text": "更",
+      "start": 83.1375,
+      "end": 83.3375,
+      "duration": 0.2,
+      "start_char": 400,
+      "end_char": 401
+    },
+    {
+      "text": "好",
+      "start": 83.3375,
+      "end": 83.6875,
+      "duration": 0.35,
+      "start_char": 401,
+      "end_char": 402
+    },
+    {
+      "text": "第",
+      "start": 84.25,
+      "end": 84.4375,
+      "duration": 0.1875,
+      "start_char": 405,
+      "end_char": 406
+    },
+    {
+      "text": "三",
+      "start": 84.4375,
+      "end": 84.75,
+      "duration": 0.3125,
+      "start_char": 406,
+      "end_char": 407
+    },
+    {
+      "text": "针对",
+      "start": 85.0625,
+      "end": 85.4,
+      "duration": 0.3375,
+      "start_char": 408,
+      "end_char": 410
+    },
+    {
+      "text": "薄弱",
+      "start": 85.4125,
+      "end": 85.7625,
+      "duration": 0.35,
+      "start_char": 410,
+      "end_char": 412
+    },
+    {
+      "text": "点",
+      "start": 85.775,
+      "end": 86.0,
+      "duration": 0.225,
+      "start_char": 412,
+      "end_char": 413
+    },
+    {
+      "text": "分层",
+      "start": 86.0,
+      "end": 86.35,
+      "duration": 0.35,
+      "start_char": 413,
+      "end_char": 415
+    },
+    {
+      "text": "刷",
+      "start": 86.3625,
+      "end": 86.5875,
+      "duration": 0.225,
+      "start_char": 415,
+      "end_char": 416
+    },
+    {
+      "text": "题",
+      "start": 86.5875,
+      "end": 86.95,
+      "duration": 0.3625,
+      "start_char": 416,
+      "end_char": 417
+    },
+    {
+      "text": "不要",
+      "start": 87.5125,
+      "end": 87.8125,
+      "duration": 0.3,
+      "start_char": 420,
+      "end_char": 422
+    },
+    {
+      "text": "盲目",
+      "start": 87.825,
+      "end": 88.1625,
+      "duration": 0.3375,
+      "start_char": 422,
+      "end_char": 424
+    },
+    {
+      "text": "地刷",
+      "start": 88.1875,
+      "end": 88.525,
+      "duration": 0.3375,
+      "start_char": 424,
+      "end_char": 426
+    },
+    {
+      "text": "整套",
+      "start": 88.5375,
+      "end": 88.9125,
+      "duration": 0.375,
+      "start_char": 426,
+      "end_char": 428
+    },
+    {
+      "text": "试卷",
+      "start": 88.925,
+      "end": 89.4625,
+      "duration": 0.5375,
+      "start_char": 428,
+      "end_char": 430
+    },
+    {
+      "text": "而是",
+      "start": 89.7875,
+      "end": 90.075,
+      "duration": 0.2875,
+      "start_char": 431,
+      "end_char": 433
+    },
+    {
+      "text": "要",
+      "start": 90.0875,
+      "end": 90.2625,
+      "duration": 0.175,
+      "start_char": 433,
+      "end_char": 434
+    },
+    {
+      "text": "找到",
+      "start": 90.2625,
+      "end": 90.625,
+      "duration": 0.3625,
+      "start_char": 434,
+      "end_char": 436
+    },
+    {
+      "text": "你",
+      "start": 90.65,
+      "end": 90.75,
+      "duration": 0.1,
+      "start_char": 436,
+      "end_char": 437
+    },
+    {
+      "text": "的",
+      "start": 90.75,
+      "end": 90.8375,
+      "duration": 0.0875,
+      "start_char": 437,
+      "end_char": 438
+    },
+    {
+      "text": "短板",
+      "start": 90.85,
+      "end": 91.35,
+      "duration": 0.5,
+      "start_char": 438,
+      "end_char": 440
+    },
+    {
+      "text": "比如",
+      "start": 91.6,
+      "end": 91.9375,
+      "duration": 0.3375,
+      "start_char": 441,
+      "end_char": 443
+    },
+    {
+      "text": "不",
+      "start": 91.9625,
+      "end": 92.0625,
+      "duration": 0.1,
+      "start_char": 443,
+      "end_char": 444
+    },
+    {
+      "text": "太",
+      "start": 92.0625,
+      "end": 92.2625,
+      "duration": 0.2,
+      "start_char": 444,
+      "end_char": 445
+    },
+    {
+      "text": "会",
+      "start": 92.2625,
+      "end": 92.4625,
+      "duration": 0.2,
+      "start_char": 445,
+      "end_char": 446
+    },
+    {
+      "text": "的",
+      "start": 92.4625,
+      "end": 92.55,
+      "duration": 0.0875,
+      "start_char": 446,
+      "end_char": 447
+    },
+    {
+      "text": "做题",
+      "start": 92.575,
+      "end": 92.9,
+      "duration": 0.325,
+      "start_char": 447,
+      "end_char": 449
+    },
+    {
+      "text": "思路",
+      "start": 92.9125,
+      "end": 93.4,
+      "duration": 0.4875,
+      "start_char": 449,
+      "end_char": 451
+    },
+    {
+      "text": "或者",
+      "start": 93.625,
+      "end": 93.975,
+      "duration": 0.35,
+      "start_char": 452,
+      "end_char": 454
+    },
+    {
+      "text": "不",
+      "start": 94.0,
+      "end": 94.1125,
+      "duration": 0.1125,
+      "start_char": 454,
+      "end_char": 455
+    },
+    {
+      "text": "太",
+      "start": 94.1125,
+      "end": 94.3125,
+      "duration": 0.2,
+      "start_char": 455,
+      "end_char": 456
+    },
+    {
+      "text": "会",
+      "start": 94.3125,
+      "end": 94.5,
+      "duration": 0.1875,
+      "start_char": 456,
+      "end_char": 457
+    },
+    {
+      "text": "做",
+      "start": 94.5125,
+      "end": 94.675,
+      "duration": 0.1625,
+      "start_char": 457,
+      "end_char": 458
+    },
+    {
+      "text": "的",
+      "start": 94.675,
+      "end": 94.7625,
+      "duration": 0.0875,
+      "start_char": 458,
+      "end_char": 459
+    },
+    {
+      "text": "题型",
+      "start": 94.775,
+      "end": 95.325,
+      "duration": 0.55,
+      "start_char": 459,
+      "end_char": 461
+    },
+    {
+      "text": "找到",
+      "start": 95.9,
+      "end": 96.2,
+      "duration": 0.3,
+      "start_char": 462,
+      "end_char": 464
+    },
+    {
+      "text": "短板",
+      "start": 96.2125,
+      "end": 96.575,
+      "duration": 0.3625,
+      "start_char": 464,
+      "end_char": 466
+    },
+    {
+      "text": "之后",
+      "start": 96.5875,
+      "end": 97.0625,
+      "duration": 0.475,
+      "start_char": 466,
+      "end_char": 468
+    },
+    {
+      "text": "每",
+      "start": 97.325,
+      "end": 97.5,
+      "duration": 0.175,
+      "start_char": 469,
+      "end_char": 470
+    },
+    {
+      "text": "三",
+      "start": 97.5,
+      "end": 97.7,
+      "duration": 0.2,
+      "start_char": 470,
+      "end_char": 471
+    },
+    {
+      "text": "到",
+      "start": 97.7,
+      "end": 97.85,
+      "duration": 0.15,
+      "start_char": 471,
+      "end_char": 472
+    },
+    {
+      "text": "五",
+      "start": 97.8625,
+      "end": 98.025,
+      "duration": 0.1625,
+      "start_char": 472,
+      "end_char": 473
+    },
+    {
+      "text": "题",
+      "start": 98.025,
+      "end": 98.2375,
+      "duration": 0.2125,
+      "start_char": 473,
+      "end_char": 474
+    },
+    {
+      "text": "为",
+      "start": 98.25,
+      "end": 98.4125,
+      "duration": 0.1625,
+      "start_char": 474,
+      "end_char": 475
+    },
+    {
+      "text": "一",
+      "start": 98.425,
+      "end": 98.575,
+      "duration": 0.15,
+      "start_char": 475,
+      "end_char": 476
+    },
+    {
+      "text": "组",
+      "start": 98.575,
+      "end": 98.85,
+      "duration": 0.275,
+      "start_char": 476,
+      "end_char": 477
+    },
+    {
+      "text": "由浅入深",
+      "start": 99.15,
+      "end": 99.8875,
+      "duration": 0.7375,
+      "start_char": 478,
+      "end_char": 482
+    },
+    {
+      "text": "地",
+      "start": 99.8875,
+      "end": 99.9875,
+      "duration": 0.1,
+      "start_char": 482,
+      "end_char": 483
+    },
+    {
+      "text": "做",
+      "start": 100.0125,
+      "end": 100.175,
+      "duration": 0.1625,
+      "start_char": 483,
+      "end_char": 484
+    },
+    {
+      "text": "递进式",
+      "start": 100.175,
+      "end": 100.6625,
+      "duration": 0.4875,
+      "start_char": 484,
+      "end_char": 487
+    },
+    {
+      "text": "训练",
+      "start": 100.675,
+      "end": 101.1625,
+      "duration": 0.4875,
+      "start_char": 487,
+      "end_char": 489
+    },
+    {
+      "text": "那些",
+      "start": 101.7375,
+      "end": 102.0625,
+      "duration": 0.325,
+      "start_char": 490,
+      "end_char": 492
+    },
+    {
+      "text": "反复",
+      "start": 102.0875,
+      "end": 102.4625,
+      "duration": 0.375,
+      "start_char": 492,
+      "end_char": 494
+    },
+    {
+      "text": "出错",
+      "start": 102.475,
+      "end": 102.85,
+      "duration": 0.375,
+      "start_char": 494,
+      "end_char": 496
+    },
+    {
+      "text": "的",
+      "start": 102.85,
+      "end": 102.9375,
+      "duration": 0.0875,
+      "start_char": 496,
+      "end_char": 497
+    },
+    {
+      "text": "题目",
+      "start": 102.95,
+      "end": 103.425,
+      "duration": 0.475,
+      "start_char": 497,
+      "end_char": 499
+    },
+    {
+      "text": "隔",
+      "start": 103.725,
+      "end": 103.9125,
+      "duration": 0.1875,
+      "start_char": 500,
+      "end_char": 501
+    },
+    {
+      "text": "几",
+      "start": 103.925,
+      "end": 104.0875,
+      "duration": 0.1625,
+      "start_char": 501,
+      "end_char": 502
+    },
+    {
+      "text": "天",
+      "start": 104.0875,
+      "end": 104.4375,
+      "duration": 0.35,
+      "start_char": 502,
+      "end_char": 503
+    },
+    {
+      "text": "我们",
+      "start": 104.5375,
+      "end": 104.7875,
+      "duration": 0.25,
+      "start_char": 503,
+      "end_char": 505
+    },
+    {
+      "text": "再",
+      "start": 104.8,
+      "end": 104.9625,
+      "duration": 0.1625,
+      "start_char": 505,
+      "end_char": 506
+    },
+    {
+      "text": "来",
+      "start": 104.9625,
+      "end": 105.0875,
+      "duration": 0.125,
+      "start_char": 506,
+      "end_char": 507
+    },
+    {
+      "text": "复盘",
+      "start": 105.1,
+      "end": 105.65,
+      "duration": 0.55,
+      "start_char": 507,
+      "end_char": 509
+    },
+    {
+      "text": "这样",
+      "start": 106.225,
+      "end": 106.5625,
+      "duration": 0.3375,
+      "start_char": 512,
+      "end_char": 514
+    },
+    {
+      "text": "主动",
+      "start": 106.5875,
+      "end": 106.9,
+      "duration": 0.3125,
+      "start_char": 514,
+      "end_char": 516
+    },
+    {
+      "text": "攻克",
+      "start": 106.9125,
+      "end": 107.2875,
+      "duration": 0.375,
+      "start_char": 516,
+      "end_char": 518
+    },
+    {
+      "text": "自身",
+      "start": 107.3125,
+      "end": 107.6875,
+      "duration": 0.375,
+      "start_char": 518,
+      "end_char": 520
+    },
+    {
+      "text": "的",
+      "start": 107.6875,
+      "end": 107.775,
+      "duration": 0.0875,
+      "start_char": 520,
+      "end_char": 521
+    },
+    {
+      "text": "漏洞",
+      "start": 107.7875,
+      "end": 108.2375,
+      "duration": 0.45,
+      "start_char": 521,
+      "end_char": 523
+    },
+    {
+      "text": "就算",
+      "start": 108.525,
+      "end": 108.8875,
+      "duration": 0.3625,
+      "start_char": 524,
+      "end_char": 526
+    },
+    {
+      "text": "试卷",
+      "start": 108.9125,
+      "end": 109.275,
+      "duration": 0.3625,
+      "start_char": 526,
+      "end_char": 528
+    },
+    {
+      "text": "的",
+      "start": 109.275,
+      "end": 109.3625,
+      "duration": 0.0875,
+      "start_char": 528,
+      "end_char": 529
+    },
+    {
+      "text": "难度",
+      "start": 109.375,
+      "end": 109.85,
+      "duration": 0.475,
+      "start_char": 529,
+      "end_char": 531
+    },
+    {
+      "text": "超出",
+      "start": 109.875,
+      "end": 110.225,
+      "duration": 0.35,
+      "start_char": 531,
+      "end_char": 533
+    },
+    {
+      "text": "预期",
+      "start": 110.2375,
+      "end": 110.7375,
+      "duration": 0.5,
+      "start_char": 533,
+      "end_char": 535
+    },
+    {
+      "text": "那些",
+      "start": 110.95,
+      "end": 111.2875,
+      "duration": 0.3375,
+      "start_char": 536,
+      "end_char": 538
+    },
+    {
+      "text": "基础",
+      "start": 111.3,
+      "end": 111.6625,
+      "duration": 0.3625,
+      "start_char": 538,
+      "end_char": 540
+    },
+    {
+      "text": "题",
+      "start": 111.675,
+      "end": 111.9625,
+      "duration": 0.2875,
+      "start_char": 540,
+      "end_char": 541
+    },
+    {
+      "text": "和",
+      "start": 111.9875,
+      "end": 112.1375,
+      "duration": 0.15,
+      "start_char": 541,
+      "end_char": 542
+    },
+    {
+      "text": "中档",
+      "start": 112.15,
+      "end": 112.575,
+      "duration": 0.425,
+      "start_char": 542,
+      "end_char": 544
+    },
+    {
+      "text": "题",
+      "start": 112.575,
+      "end": 112.95,
+      "duration": 0.375,
+      "start_char": 544,
+      "end_char": 545
+    },
+    {
+      "text": "也",
+      "start": 113.05,
+      "end": 113.2,
+      "duration": 0.15,
+      "start_char": 545,
+      "end_char": 546
+    },
+    {
+      "text": "能",
+      "start": 113.2,
+      "end": 113.35,
+      "duration": 0.15,
+      "start_char": 546,
+      "end_char": 547
+    },
+    {
+      "text": "稳稳",
+      "start": 113.375,
+      "end": 113.7625,
+      "duration": 0.3875,
+      "start_char": 547,
+      "end_char": 549
+    },
+    {
+      "text": "地",
+      "start": 113.7625,
+      "end": 113.85,
+      "duration": 0.0875,
+      "start_char": 549,
+      "end_char": 550
+    },
+    {
+      "text": "拿",
+      "start": 113.8625,
+      "end": 114.0625,
+      "duration": 0.2,
+      "start_char": 550,
+      "end_char": 551
+    },
+    {
+      "text": "分",
+      "start": 114.0625,
+      "end": 114.35,
+      "duration": 0.2875,
+      "start_char": 551,
+      "end_char": 552
+    },
+    {
+      "text": "遇到",
+      "start": 114.9125,
+      "end": 115.1875,
+      "duration": 0.275,
+      "start_char": 553,
+      "end_char": 555
+    },
+    {
+      "text": "难题",
+      "start": 115.2125,
+      "end": 115.5625,
+      "duration": 0.35,
+      "start_char": 555,
+      "end_char": 557
+    },
+    {
+      "text": "的",
+      "start": 115.5625,
+      "end": 115.65,
+      "duration": 0.0875,
+      "start_char": 557,
+      "end_char": 558
+    },
+    {
+      "text": "时候",
+      "start": 115.6625,
+      "end": 116.1375,
+      "duration": 0.475,
+      "start_char": 558,
+      "end_char": 560
+    },
+    {
+      "text": "那些",
+      "start": 116.45,
+      "end": 116.725,
+      "duration": 0.275,
+      "start_char": 561,
+      "end_char": 563
+    },
+    {
+      "text": "难题",
+      "start": 116.7375,
+      "end": 117.0875,
+      "duration": 0.35,
+      "start_char": 563,
+      "end_char": 565
+    },
+    {
+      "text": "的",
+      "start": 117.0875,
+      "end": 117.175,
+      "duration": 0.0875,
+      "start_char": 565,
+      "end_char": 566
+    },
+    {
+      "text": "思路",
+      "start": 117.1875,
+      "end": 117.7,
+      "duration": 0.5125,
+      "start_char": 566,
+      "end_char": 568
+    },
+    {
+      "text": "其实",
+      "start": 117.8,
+      "end": 118.1125,
+      "duration": 0.3125,
+      "start_char": 568,
+      "end_char": 570
+    },
+    {
+      "text": "也",
+      "start": 118.125,
+      "end": 118.2625,
+      "duration": 0.1375,
+      "start_char": 570,
+      "end_char": 571
+    },
+    {
+      "text": "是",
+      "start": 118.2625,
+      "end": 118.4,
+      "duration": 0.1375,
+      "start_char": 571,
+      "end_char": 572
+    },
+    {
+      "text": "从",
+      "start": 118.4,
+      "end": 118.6125,
+      "duration": 0.2125,
+      "start_char": 572,
+      "end_char": 573
+    },
+    {
+      "text": "中档",
+      "start": 118.6375,
+      "end": 119.0125,
+      "duration": 0.375,
+      "start_char": 573,
+      "end_char": 575
+    },
+    {
+      "text": "题",
+      "start": 119.0125,
+      "end": 119.1875,
+      "duration": 0.175,
+      "start_char": 575,
+      "end_char": 576
+    },
+    {
+      "text": "一",
+      "start": 119.2125,
+      "end": 119.3375,
+      "duration": 0.125,
+      "start_char": 576,
+      "end_char": 577
+    },
+    {
+      "text": "步",
+      "start": 119.3375,
+      "end": 119.4875,
+      "duration": 0.15,
+      "start_char": 577,
+      "end_char": 578
+    },
+    {
+      "text": "步变",
+      "start": 119.5,
+      "end": 119.8375,
+      "duration": 0.3375,
+      "start_char": 578,
+      "end_char": 580
+    },
+    {
+      "text": "形",
+      "start": 119.8375,
+      "end": 120.025,
+      "duration": 0.1875,
+      "start_char": 580,
+      "end_char": 581
+    },
+    {
+      "text": "而",
+      "start": 120.0375,
+      "end": 120.175,
+      "duration": 0.1375,
+      "start_char": 581,
+      "end_char": 582
+    },
+    {
+      "text": "来",
+      "start": 120.175,
+      "end": 120.4125,
+      "duration": 0.2375,
+      "start_char": 582,
+      "end_char": 583
+    },
+    {
+      "text": "的",
+      "start": 120.4125,
+      "end": 120.6125,
+      "duration": 0.2,
+      "start_char": 583,
+      "end_char": 584
+    },
+    {
+      "text": "当",
+      "start": 121.175,
+      "end": 121.35,
+      "duration": 0.175,
+      "start_char": 585,
+      "end_char": 586
+    },
+    {
+      "text": "你",
+      "start": 121.35,
+      "end": 121.45,
+      "duration": 0.1,
+      "start_char": 586,
+      "end_char": 587
+    },
+    {
+      "text": "把",
+      "start": 121.45,
+      "end": 121.625,
+      "duration": 0.175,
+      "start_char": 587,
+      "end_char": 588
+    },
+    {
+      "text": "中档",
+      "start": 121.65,
+      "end": 122.0625,
+      "duration": 0.4125,
+      "start_char": 588,
+      "end_char": 590
+    },
+    {
+      "text": "题",
+      "start": 122.0625,
+      "end": 122.2125,
+      "duration": 0.15,
+      "start_char": 590,
+      "end_char": 591
+    },
+    {
+      "text": "的",
+      "start": 122.2125,
+      "end": 122.3,
+      "duration": 0.0875,
+      "start_char": 591,
+      "end_char": 592
+    },
+    {
+      "text": "思路",
+      "start": 122.3125,
+      "end": 122.6375,
+      "duration": 0.325,
+      "start_char": 592,
+      "end_char": 594
+    },
+    {
+      "text": "刷",
+      "start": 122.6625,
+      "end": 122.85,
+      "duration": 0.1875,
+      "start_char": 594,
+      "end_char": 595
+    },
+    {
+      "text": "扎实",
+      "start": 122.8625,
+      "end": 123.4125,
+      "duration": 0.55,
+      "start_char": 595,
+      "end_char": 597
+    },
+    {
+      "text": "遇到",
+      "start": 123.725,
+      "end": 124.0125,
+      "duration": 0.2875,
+      "start_char": 598,
+      "end_char": 600
+    },
+    {
+      "text": "难题",
+      "start": 124.025,
+      "end": 124.6375,
+      "duration": 0.6125,
+      "start_char": 600,
+      "end_char": 602
+    },
+    {
+      "text": "也",
+      "start": 124.7375,
+      "end": 124.8625,
+      "duration": 0.125,
+      "start_char": 602,
+      "end_char": 603
+    },
+    {
+      "text": "能",
+      "start": 124.8625,
+      "end": 125.0,
+      "duration": 0.1375,
+      "start_char": 603,
+      "end_char": 604
+    },
+    {
+      "text": "做出",
+      "start": 125.0125,
+      "end": 125.3125,
+      "duration": 0.3,
+      "start_char": 604,
+      "end_char": 606
+    },
+    {
+      "text": "前面",
+      "start": 125.3375,
+      "end": 125.7375,
+      "duration": 0.4,
+      "start_char": 606,
+      "end_char": 608
+    },
+    {
+      "text": "的",
+      "start": 125.7375,
+      "end": 125.8125,
+      "duration": 0.075,
+      "start_char": 608,
+      "end_char": 609
+    },
+    {
+      "text": "一部分",
+      "start": 125.825,
+      "end": 126.45,
+      "duration": 0.625,
+      "start_char": 609,
+      "end_char": 612
+    },
+    {
+      "text": "我们",
+      "start": 127.025,
+      "end": 127.2375,
+      "duration": 0.2125,
+      "start_char": 615,
+      "end_char": 617
+    },
+    {
+      "text": "强调",
+      "start": 127.25,
+      "end": 127.8,
+      "duration": 0.55,
+      "start_char": 617,
+      "end_char": 619
+    },
+    {
+      "text": "系统性",
+      "start": 127.9,
+      "end": 128.45,
+      "duration": 0.55,
+      "start_char": 619,
+      "end_char": 622
+    },
+    {
+      "text": "的",
+      "start": 128.45,
+      "end": 128.5375,
+      "duration": 0.0875,
+      "start_char": 622,
+      "end_char": 623
+    },
+    {
+      "text": "刻意",
+      "start": 128.5625,
+      "end": 128.8875,
+      "duration": 0.325,
+      "start_char": 623,
+      "end_char": 625
+    },
+    {
+      "text": "练习",
+      "start": 128.9,
+      "end": 129.475,
+      "duration": 0.575,
+      "start_char": 625,
+      "end_char": 627
+    },
+    {
+      "text": "这种",
+      "start": 130.0375,
+      "end": 130.375,
+      "duration": 0.3375,
+      "start_char": 628,
+      "end_char": 630
+    },
+    {
+      "text": "练习",
+      "start": 130.4,
+      "end": 130.7125,
+      "duration": 0.3125,
+      "start_char": 630,
+      "end_char": 632
+    },
+    {
+      "text": "的",
+      "start": 130.7125,
+      "end": 130.8,
+      "duration": 0.0875,
+      "start_char": 632,
+      "end_char": 633
+    },
+    {
+      "text": "本质",
+      "start": 130.8125,
+      "end": 131.3375,
+      "duration": 0.525,
+      "start_char": 633,
+      "end_char": 635
+    },
+    {
+      "text": "并不是",
+      "start": 131.6125,
+      "end": 132.0,
+      "duration": 0.3875,
+      "start_char": 636,
+      "end_char": 639
+    },
+    {
+      "text": "保证",
+      "start": 132.0125,
+      "end": 132.3875,
+      "duration": 0.375,
+      "start_char": 639,
+      "end_char": 641
+    },
+    {
+      "text": "每",
+      "start": 132.4125,
+      "end": 132.5875,
+      "duration": 0.175,
+      "start_char": 641,
+      "end_char": 642
+    },
+    {
+      "text": "一",
+      "start": 132.5875,
+      "end": 132.7,
+      "duration": 0.1125,
+      "start_char": 642,
+      "end_char": 643
+    },
+    {
+      "text": "场",
+      "start": 132.7,
+      "end": 132.875,
+      "duration": 0.175,
+      "start_char": 643,
+      "end_char": 644
+    },
+    {
+      "text": "考试",
+      "start": 132.8875,
+      "end": 133.45,
+      "duration": 0.5625,
+      "start_char": 644,
+      "end_char": 646
+    },
+    {
+      "text": "都",
+      "start": 133.55,
+      "end": 133.7,
+      "duration": 0.15,
+      "start_char": 646,
+      "end_char": 647
+    },
+    {
+      "text": "能",
+      "start": 133.7,
+      "end": 133.825,
+      "duration": 0.125,
+      "start_char": 647,
+      "end_char": 648
+    },
+    {
+      "text": "拿高",
+      "start": 133.8375,
+      "end": 134.225,
+      "duration": 0.3875,
+      "start_char": 648,
+      "end_char": 650
+    },
+    {
+      "text": "分",
+      "start": 134.225,
+      "end": 134.475,
+      "duration": 0.25,
+      "start_char": 650,
+      "end_char": 651
+    },
+    {
+      "text": "而是",
+      "start": 134.7,
+      "end": 134.9875,
+      "duration": 0.2875,
+      "start_char": 652,
+      "end_char": 654
+    },
+    {
+      "text": "把",
+      "start": 135.0,
+      "end": 135.15,
+      "duration": 0.15,
+      "start_char": 654,
+      "end_char": 655
+    },
+    {
+      "text": "漫无目的",
+      "start": 135.175,
+      "end": 135.825,
+      "duration": 0.65,
+      "start_char": 655,
+      "end_char": 659
+    },
+    {
+      "text": "的",
+      "start": 135.825,
+      "end": 135.9125,
+      "duration": 0.0875,
+      "start_char": 659,
+      "end_char": 660
+    },
+    {
+      "text": "苦学",
+      "start": 135.925,
+      "end": 136.5125,
+      "duration": 0.5875,
+      "start_char": 660,
+      "end_char": 662
+    },
+    {
+      "text": "转化",
+      "start": 136.6125,
+      "end": 137.0125,
+      "duration": 0.4,
+      "start_char": 662,
+      "end_char": 664
+    },
+    {
+      "text": "成",
+      "start": 137.0125,
+      "end": 137.2125,
+      "duration": 0.2,
+      "start_char": 664,
+      "end_char": 665
+    },
+    {
+      "text": "稳定",
+      "start": 137.2375,
+      "end": 137.6625,
+      "duration": 0.425,
+      "start_char": 665,
+      "end_char": 667
+    },
+    {
+      "text": "发挥",
+      "start": 137.675,
+      "end": 138.0,
+      "duration": 0.325,
+      "start_char": 667,
+      "end_char": 669
+    },
+    {
+      "text": "的",
+      "start": 138.0,
+      "end": 138.075,
+      "duration": 0.075,
+      "start_char": 669,
+      "end_char": 670
+    },
+    {
+      "text": "体系",
+      "start": 138.0875,
+      "end": 138.6375,
+      "duration": 0.55,
+      "start_char": 670,
+      "end_char": 672
+    },
+    {
+      "text": "数学",
+      "start": 139.2125,
+      "end": 139.6125,
+      "duration": 0.4,
+      "start_char": 675,
+      "end_char": 677
+    },
+    {
+      "text": "考题",
+      "start": 139.625,
+      "end": 140.25,
+      "duration": 0.625,
+      "start_char": 677,
+      "end_char": 679
+    },
+    {
+      "text": "永远",
+      "start": 140.35,
+      "end": 140.7125,
+      "duration": 0.3625,
+      "start_char": 679,
+      "end_char": 681
+    },
+    {
+      "text": "存在",
+      "start": 140.725,
+      "end": 141.05,
+      "duration": 0.325,
+      "start_char": 681,
+      "end_char": 683
+    },
+    {
+      "text": "变数",
+      "start": 141.0625,
+      "end": 141.575,
+      "duration": 0.5125,
+      "start_char": 683,
+      "end_char": 685
+    },
+    {
+      "text": "但",
+      "start": 141.95,
+      "end": 142.125,
+      "duration": 0.175,
+      "start_char": 686,
+      "end_char": 687
+    },
+    {
+      "text": "扎实",
+      "start": 142.1375,
+      "end": 142.4625,
+      "duration": 0.325,
+      "start_char": 687,
+      "end_char": 689
+    },
+    {
+      "text": "的",
+      "start": 142.4625,
+      "end": 142.575,
+      "duration": 0.1125,
+      "start_char": 689,
+      "end_char": 690
+    },
+    {
+      "text": "知识",
+      "start": 142.6,
+      "end": 142.875,
+      "duration": 0.275,
+      "start_char": 690,
+      "end_char": 692
+    },
+    {
+      "text": "框架",
+      "start": 142.8875,
+      "end": 143.4375,
+      "duration": 0.55,
+      "start_char": 692,
+      "end_char": 694
+    },
+    {
+      "text": "稳定",
+      "start": 143.625,
+      "end": 144.025,
+      "duration": 0.4,
+      "start_char": 695,
+      "end_char": 697
+    },
+    {
+      "text": "的",
+      "start": 144.025,
+      "end": 144.1125,
+      "duration": 0.0875,
+      "start_char": 697,
+      "end_char": 698
+    },
+    {
+      "text": "做题",
+      "start": 144.1375,
+      "end": 144.4375,
+      "duration": 0.3,
+      "start_char": 698,
+      "end_char": 700
+    },
+    {
+      "text": "习惯",
+      "start": 144.45,
+      "end": 144.95,
+      "duration": 0.5,
+      "start_char": 700,
+      "end_char": 702
+    },
+    {
+      "text": "能",
+      "start": 145.1875,
+      "end": 145.4,
+      "duration": 0.2125,
+      "start_char": 703,
+      "end_char": 704
+    },
+    {
+      "text": "帮",
+      "start": 145.4,
+      "end": 145.55,
+      "duration": 0.15,
+      "start_char": 704,
+      "end_char": 705
+    },
+    {
+      "text": "我们",
+      "start": 145.5625,
+      "end": 145.75,
+      "duration": 0.1875,
+      "start_char": 705,
+      "end_char": 707
+    },
+    {
+      "text": "对冲",
+      "start": 145.7625,
+      "end": 146.25,
+      "duration": 0.4875,
+      "start_char": 707,
+      "end_char": 709
+    },
+    {
+      "text": "大部分",
+      "start": 146.275,
+      "end": 146.7625,
+      "duration": 0.4875,
+      "start_char": 709,
+      "end_char": 712
+    },
+    {
+      "text": "的",
+      "start": 146.7625,
+      "end": 146.85,
+      "duration": 0.0875,
+      "start_char": 712,
+      "end_char": 713
+    },
+    {
+      "text": "考试",
+      "start": 146.875,
+      "end": 147.2375,
+      "duration": 0.3625,
+      "start_char": 713,
+      "end_char": 715
+    },
+    {
+      "text": "风险",
+      "start": 147.25,
+      "end": 147.8,
+      "duration": 0.55,
+      "start_char": 715,
+      "end_char": 717
+    }
+  ]
+}
