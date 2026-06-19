@@ -1,0 +1,878 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="data:,">
+  <title>Math Study Guide</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f5f5f4;
+      --surface: #ffffff;
+      --line: #d7d3cc;
+      --text: #1c1917;
+      --muted: #6b6258;
+      --active: #fff3c4;
+      --active-line: #b45309;
+      --button: #1c1917;
+      --button-text: #ffffff;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
+      font-size: 16px;
+      line-height: 1.55;
+    }
+    .app {
+      min-height: 100vh;
+      display: grid;
+      grid-template-columns: 280px minmax(0, 1fr);
+    }
+    aside {
+      border-right: 1px solid var(--line);
+      background: var(--surface);
+      height: 100vh;
+      position: sticky;
+      top: 0;
+      overflow: auto;
+      padding: 20px 16px;
+    }
+    .book-title {
+      font-size: 15px;
+      font-weight: 700;
+      margin: 0 0 16px;
+      line-height: 1.3;
+    }
+    .chapter-list {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+    .chapter-link {
+      width: 100%;
+      border: 0;
+      border-radius: 6px;
+      background: transparent;
+      color: var(--text);
+      cursor: pointer;
+      display: grid;
+      grid-template-columns: 32px 1fr;
+      gap: 8px;
+      padding: 8px;
+      text-align: left;
+      font: inherit;
+      line-height: 1.3;
+    }
+    .chapter-link:hover { background: #f0eee9; }
+    .chapter-link.active {
+      background: #e7e1d8;
+      font-weight: 650;
+    }
+    .chapter-number { color: var(--muted); font-variant-numeric: tabular-nums; }
+    main {
+      min-width: 0;
+      padding: 28px 32px 112px;
+    }
+    .topbar {
+      max-width: 840px;
+      margin: 0 auto 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+    }
+    .topbar-actions {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .language-switch {
+      display: inline-flex;
+      border: 1px solid var(--line);
+      border-radius: 7px;
+      overflow: hidden;
+      background: var(--surface);
+    }
+    .language-button {
+      border: 0;
+      border-right: 1px solid var(--line);
+      background: var(--surface);
+      color: var(--text);
+      cursor: pointer;
+      min-width: 42px;
+      padding: 6px 10px;
+      font: inherit;
+      font-size: 14px;
+      font-weight: 650;
+    }
+    .language-button:last-child { border-right: 0; }
+    .language-button[aria-pressed="true"] {
+      background: var(--button);
+      color: var(--button-text);
+    }
+    h1 {
+      font-size: 22px;
+      line-height: 1.25;
+      margin: 0;
+      font-weight: 750;
+    }
+    .time {
+      color: var(--muted);
+      font-variant-numeric: tabular-nums;
+      white-space: nowrap;
+    }
+    .reader {
+      max-width: 840px;
+      margin: 0 auto;
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 28px 34px;
+    }
+    .reader.with-screenshots {
+      background: transparent;
+      border: 0;
+      padding: 0;
+    }
+    .reader.chinese-file-fallback {
+      max-width: 1100px;
+      padding: 0;
+      overflow: hidden;
+    }
+    .chinese-reader-frame {
+      display: block;
+      width: 100%;
+      height: calc(100vh - 150px);
+      min-height: 680px;
+      border: 0;
+      background: var(--surface);
+    }
+    body.chinese-file-fallback .player { display: none; }
+    body.chinese-file-fallback main { padding-bottom: 28px; }
+    .page-layer {
+      position: relative;
+      min-height: 1088px;
+      margin: 0 0 24px;
+      padding: 54px 58px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background-color: var(--surface);
+      background-position: center top;
+      background-repeat: no-repeat;
+      background-size: contain;
+      overflow: hidden;
+    }
+    .page-layer::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(255, 255, 255, 0.54);
+      pointer-events: none;
+    }
+    .page-layer > .paragraph {
+      position: relative;
+      background: rgba(255, 255, 255, 0.76);
+    }
+    .chapter-heading {
+      font-size: 20px;
+      margin: 0 0 22px;
+      padding-bottom: 14px;
+      border-bottom: 1px solid var(--line);
+    }
+    .paragraph {
+      margin: 0 0 14px;
+      padding: 3px 6px;
+      border-left: 3px solid transparent;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .paragraph:hover { background: #f8f6f1; }
+    .paragraph.active {
+      background: var(--active);
+      border-left-color: var(--active-line);
+    }
+    .tts-word {
+      border-radius: 3px;
+      transition: background-color 120ms ease, color 120ms ease;
+    }
+    .tts-word.is-speaking {
+      background: #f4c95d;
+      color: #1c1917;
+    }
+    .reader-error {
+      margin: 0;
+      color: #9a3412;
+    }
+    .math {
+      font-family: ui-serif, Georgia, "Times New Roman", serif;
+      font-size: 1.03em;
+    }
+    .math-frac {
+      display: inline-grid;
+      grid-template-rows: auto auto;
+      justify-items: center;
+      align-items: center;
+      margin: 0 2px;
+      line-height: 1.05;
+      vertical-align: middle;
+    }
+    .math-num {
+      border-bottom: 1px solid currentColor;
+      padding: 0 3px 1px;
+    }
+    .math-den {
+      padding: 1px 3px 0;
+    }
+    .math-sqrt::before {
+      content: "√";
+      font-size: 1.1em;
+      margin-right: 1px;
+    }
+    .math-radicand {
+      border-top: 1px solid currentColor;
+      padding: 1px 2px 0;
+    }
+    sup {
+      font-size: 0.72em;
+      line-height: 0;
+    }
+    .outro {
+      color: var(--muted);
+      margin: 0;
+    }
+    .player {
+      position: fixed;
+      left: 280px;
+      right: 0;
+      bottom: 0;
+      border-top: 1px solid var(--line);
+      background: rgba(255, 255, 255, 0.96);
+      display: grid;
+      grid-template-columns: auto auto auto minmax(120px, 1fr) auto;
+      gap: 10px;
+      align-items: center;
+      padding: 12px 20px;
+    }
+    button.control {
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      background: var(--surface);
+      color: var(--text);
+      cursor: pointer;
+      min-height: 36px;
+      padding: 0 12px;
+      font: inherit;
+      font-weight: 650;
+    }
+    button.primary {
+      background: var(--button);
+      color: var(--button-text);
+      border-color: var(--button);
+      min-width: 68px;
+    }
+    button.control:disabled {
+      cursor: not-allowed;
+      opacity: 0.45;
+    }
+    input[type="range"] {
+      width: 100%;
+      accent-color: #b45309;
+    }
+    @media (max-width: 760px) {
+      .app { display: block; }
+      aside {
+        position: static;
+        height: auto;
+        max-height: 240px;
+        border-right: 0;
+        border-bottom: 1px solid var(--line);
+      }
+      main { padding: 20px 16px 120px; }
+      .reader { padding: 22px 18px; }
+      .reader.with-screenshots { padding: 0; }
+      .page-layer {
+        min-height: 720px;
+        padding: 32px 22px;
+      }
+      .topbar { align-items: flex-start; flex-direction: column; }
+      .topbar-actions {
+        width: 100%;
+        justify-content: space-between;
+      }
+      .player {
+        left: 0;
+        grid-template-columns: auto auto auto;
+      }
+      .player input[type="range"] {
+        grid-column: 1 / -1;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="app">
+    <aside>
+      <p class="book-title">Math Study Guide</p>
+      <nav class="chapter-list" id="chapterList"></nav>
+    </aside>
+    <main>
+      <div class="topbar">
+        <h1 id="chapterTitle"></h1>
+        <div class="topbar-actions">
+          <div class="language-switch" role="group" aria-label="Reader language">
+            <button class="language-button" id="enModeButton" type="button" aria-pressed="true">En</button>
+            <button class="language-button" id="zhModeButton" type="button" aria-pressed="false">Zh</button>
+          </div>
+          <div class="time" id="timeLabel">0:00 / 0:00</div>
+        </div>
+      </div>
+      <article class="reader" id="reader"></article>
+    </main>
+  </div>
+  <div class="player">
+    <button class="control" id="prevButton" type="button">Prev</button>
+    <button class="control primary" id="playButton" type="button">Play</button>
+    <button class="control" id="nextButton" type="button">Next</button>
+    <input id="seekBar" type="range" min="0" max="1000" value="0" aria-label="Seek">
+    <span class="time" id="chapterTime">0:00</span>
+  </div>
+  <audio id="audio" preload="metadata"></audio>
+  <script>
+    const manifest = {"title": "Math Study Guide", "duration": 182.443, "chapters": [{"kind": "chapter", "number": 1, "title": "Math Study Guide", "audio": "audio/chapter_001.mp3", "start": 0.0, "end": 182.443, "duration": 182.443, "paragraphs": [{"id": "c001_f000001", "text": "First, the most important thing is to organize the key knowledge points.", "begin": 0.0, "end": 5.72, "localBegin": 0.0, "localEnd": 5.72}, {"id": "c001_f000002", "text": "We need to understand that all exam questions are built around the most basic concepts and knowledge points.", "begin": 5.72, "end": 12.52, "localBegin": 5.72, "localEnd": 12.52}, {"id": "c001_f000003", "text": "The purpose of doing exercises is to strengthen and master those knowledge points.", "begin": 12.52, "end": 18.12, "localBegin": 12.52, "localEnd": 18.12}, {"id": "c001_f000004", "text": "So, spend ten minutes every day closing your book and drawing a mind map of the chapter from memory.", "begin": 18.12, "end": 24.08, "localBegin": 18.12, "localEnd": 24.08}, {"id": "c001_f000005", "text": "For each knowledge point, connect it in your mind with a typical example question, or with a question you once answered incorrectly.", "begin": 24.08, "end": 31.92, "localBegin": 24.08, "localEnd": 31.92}, {"id": "c001_f000006", "text": "In this way, you can link knowledge points with actual problems.", "begin": 31.92, "end": 36.4, "localBegin": 31.92, "localEnd": 36.4}, {"id": "c001_f000007", "text": "At the same time, compare your mind map with the textbook to check what is missing, and turn scattered knowledge into a complete system.", "begin": 36.4, "end": 44.92, "localBegin": 36.4, "localEnd": 44.92}, {"id": "c001_f000008", "text": "Even if the question types change in the exam, you will still be able to quickly identify the tested knowledge point.", "begin": 44.92, "end": 52.24, "localBegin": 44.92, "localEnd": 52.24}, {"id": "c001_f000009", "text": "You will not get completely stuck just because the question looks unfamiliar, and you will be able to secure the basic marks.", "begin": 52.24, "end": 58.84, "localBegin": 52.24, "localEnd": 58.84}, {"id": "c001_f000010", "text": "Second, practise calculation.", "begin": 58.84, "end": 61.96, "localBegin": 58.84, "localEnd": 61.96}, {"id": "c001_f000011", "text": "In exams, many unnecessary marks are lost because of calculation mistakes.", "begin": 61.96, "end": 66.96, "localBegin": 61.96, "localEnd": 66.96}, {"id": "c001_f000012", "text": "When practising, we should make our rough work and reasoning process clear and organized, so that we can trace back and check our work.", "begin": 66.96, "end": 74.72, "localBegin": 66.96, "localEnd": 74.72}, {"id": "c001_f000013", "text": "Every time we make a mistake, we should record the reason and do targeted practice repeatedly, turning calculation into a stable habit.", "begin": 74.72, "end": 82.6, "localBegin": 74.72, "localEnd": 82.6}, {"id": "c001_f000014", "text": "In addition, calculation mistakes often happen because we feel rushed.", "begin": 82.6, "end": 86.92, "localBegin": 82.6, "localEnd": 86.92}, {"id": "c001_f000015", "text": "At that moment, we must slow down and keep a steady pace.", "begin": 86.92, "end": 91.0, "localBegin": 86.92, "localEnd": 91.0}, {"id": "c001_f000016", "text": "Many students also make calculation errors because they do not clearly understand the principles, reasoning, and methods behind the calculations.", "begin": 91.0, "end": 99.8, "localBegin": 91.0, "localEnd": 99.8}, {"id": "c001_f000017", "text": "In that case, we need to strengthen the knowledge points related to calculation.", "begin": 99.8, "end": 104.4, "localBegin": 99.8, "localEnd": 104.4}, {"id": "c001_f000018", "text": "Third, practise by focusing on weak areas in layers.", "begin": 104.4, "end": 107.88, "localBegin": 104.4, "localEnd": 107.88}, {"id": "c001_f000019", "text": "Do not blindly do full sets of exam papers.", "begin": 107.88, "end": 110.56, "localBegin": 107.88, "localEnd": 110.56}, {"id": "c001_f000020", "text": "Instead, find your weaknesses, such as problem-solving methods you are not familiar with, or types of questions you do not know how to handle well.", "begin": 110.56, "end": 120.08, "localBegin": 110.56, "localEnd": 120.08}, {"id": "c001_f000021", "text": "After identifying your weak areas, practise in groups of three to five questions, moving step by step from easier to harder problems.", "begin": 120.08, "end": 128.96, "localBegin": 120.08, "localEnd": 128.96}, {"id": "c001_f000022", "text": "For questions you repeatedly get wrong, review them again after a few days.", "begin": 128.96, "end": 133.72, "localBegin": 128.96, "localEnd": 133.72}, {"id": "c001_f000023", "text": "By actively fixing your own weak spots, even if the exam is more difficult than expected, you can still steadily earn marks on basic and medium-level questions.", "begin": 133.72, "end": 144.2, "localBegin": 133.72, "localEnd": 144.2}, {"id": "c001_f000024", "text": "When you meet difficult questions, their ideas are often developed step by step from medium-level questions.", "begin": 144.2, "end": 151.04, "localBegin": 144.2, "localEnd": 151.04}, {"id": "c001_f000025", "text": "Once you have firmly mastered the thinking behind medium-level questions, you will also be able to solve at least the first part of harder questions.", "begin": 151.04, "end": 159.6, "localBegin": 151.04, "localEnd": 159.6}, {"id": "c001_f000026", "text": "We emphasize systematic deliberate practice.", "begin": 159.6, "end": 163.0, "localBegin": 159.6, "localEnd": 163.0}, {"id": "c001_f000027", "text": "The essence of this kind of practice is not to guarantee a high score in every exam, but to turn aimless hard work into a system that supports stable performance.", "begin": 163.0, "end": 173.0, "localBegin": 163.0, "localEnd": 173.0}, {"id": "c001_f000028", "text": "Math exam questions will always contain uncertainties.", "begin": 173.0, "end": 176.12, "localBegin": 173.0, "localEnd": 176.12}, {"id": "c001_f000029", "text": "However, a solid knowledge framework and stable problem-solving habits can help us reduce most exam risks.", "begin": 176.12, "end": 182.44, "localBegin": 176.12, "localEnd": 182.44}]}]};
+    const MODE_KEY = `aligned-reader-mode:${manifest.title}`;
+    const EN_PROGRESS_KEY = `aligned-reader-progress:en:${manifest.title}`;
+    const ZH_PROGRESS_KEY = `aligned-reader-progress:zh:${manifest.title}`;
+    const CHINESE_TIMING_SOURCE = 'math-study-read-aloud/generated-audio/math-study.words.json';
+    const CHINESE_AUDIO_SOURCE = 'math-study-read-aloud/generated-audio/math-study.mp3';
+    const audio = document.getElementById('audio');
+    const bookTitle = document.querySelector('.book-title');
+    const chapterList = document.getElementById('chapterList');
+    const reader = document.getElementById('reader');
+    const chapterTitle = document.getElementById('chapterTitle');
+    const playButton = document.getElementById('playButton');
+    const prevButton = document.getElementById('prevButton');
+    const nextButton = document.getElementById('nextButton');
+    const seekBar = document.getElementById('seekBar');
+    const timeLabel = document.getElementById('timeLabel');
+    const chapterTime = document.getElementById('chapterTime');
+    const enModeButton = document.getElementById('enModeButton');
+    const zhModeButton = document.getElementById('zhModeButton');
+    let currentMode = null;
+    let currentIndex = 0;
+    let currentParagraphId = null;
+    let chineseTiming = null;
+    let chineseWordSpans = [];
+    let chineseWordParagraphs = [];
+    let activeChineseWord = -1;
+    let activeChineseParagraph = null;
+    const audioObjectUrls = new Map();
+
+    function readProgress(key) {
+      try {
+        return JSON.parse(localStorage.getItem(key) || 'null');
+      } catch {
+        return null;
+      }
+    }
+
+    function saveEnglishProgress(paragraph = null) {
+      localStorage.setItem(EN_PROGRESS_KEY, JSON.stringify({
+        chapterIndex: currentIndex,
+        paragraphId: paragraph?.id || currentParagraphId,
+        currentTime: audio.currentTime || 0,
+      }));
+    }
+
+    function saveChineseProgress() {
+      localStorage.setItem(ZH_PROGRESS_KEY, JSON.stringify({
+        currentTime: audio.currentTime || 0,
+      }));
+    }
+
+    function saveCurrentProgress() {
+      if (currentMode === 'zh') {
+        saveChineseProgress();
+      } else if (currentMode === 'en') {
+        saveEnglishProgress();
+      }
+    }
+
+    function formatTime(seconds) {
+      seconds = Math.max(0, Math.floor(seconds || 0));
+      const h = Math.floor(seconds / 3600);
+      const m = Math.floor((seconds % 3600) / 60);
+      const s = seconds % 60;
+      return h ? `${h}:${String(m).padStart(2, '0')}:${String(s).padStart(2, '0')}` : `${m}:${String(s).padStart(2, '0')}`;
+    }
+
+    function escapeHtml(text) {
+      return text
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;')
+        .replace(/'/g, '&#39;');
+    }
+
+    function hasMathText(text) {
+      return /\\(?:frac|sqrt|left|right|times)\b|\^[A-Za-z0-9{]/.test(text);
+    }
+
+    function renderMathText(text) {
+      let rendered = escapeHtml(text);
+      rendered = rendered
+        .replace(/\\left/g, '')
+        .replace(/\\right/g, '')
+        .replace(/\\times/g, '×')
+        .replace(/\\sqrt\{([^{}]+)\}/g, '<span class="math-sqrt"><span class="math-radicand">$1</span></span>')
+        .replace(/\\frac\{([^{}]+)\}\{([^{}]+)\}/g, '<span class="math-frac"><span class="math-num">$1</span><span class="math-den">$2</span></span>')
+        .replace(/\^\{([^{}]+)\}/g, '<sup>$1</sup>')
+        .replace(/\^([A-Za-z0-9+-]+)/g, '<sup>$1</sup>');
+      return rendered;
+    }
+
+    function createParagraphNode(paragraph) {
+      const node = document.createElement('p');
+      node.className = 'paragraph';
+      node.id = paragraph.id;
+      if (hasMathText(paragraph.text)) {
+        node.classList.add('math');
+      }
+      node.innerHTML = renderMathText(paragraph.text);
+      node.addEventListener('click', () => {
+        saveEnglishProgress(paragraph);
+        audio.currentTime = paragraph.localBegin;
+        audio.play().catch(() => null);
+      });
+      return node;
+    }
+
+    function renderPageSpread(chapter) {
+      const screenshots = chapter.screenshots || manifest.screenshots || [];
+      if (!screenshots.length) {
+        reader.classList.remove('with-screenshots');
+        chapter.paragraphs.forEach((paragraph) => {
+          reader.appendChild(createParagraphNode(paragraph));
+        });
+        return;
+      }
+
+      reader.classList.add('with-screenshots');
+      const perPage = Math.ceil(chapter.paragraphs.length / screenshots.length);
+      screenshots.forEach((screenshot, index) => {
+        const page = document.createElement('section');
+        page.className = 'page-layer';
+        page.style.backgroundImage = `url("${screenshot}")`;
+        const start = index * perPage;
+        const end = Math.min(start + perPage, chapter.paragraphs.length);
+        chapter.paragraphs.slice(start, end).forEach((paragraph) => {
+          const node = createParagraphNode(paragraph);
+          page.appendChild(node);
+        });
+        reader.appendChild(page);
+      });
+    }
+
+    function renderNav() {
+      chapterList.innerHTML = '';
+      if (currentMode === 'zh') {
+        const button = document.createElement('button');
+        button.type = 'button';
+        button.className = 'chapter-link active';
+        button.innerHTML = '<span class="chapter-number">01</span><span>把苦学转化为稳定发挥</span>';
+        chapterList.appendChild(button);
+        return;
+      }
+      manifest.chapters.forEach((chapter, index) => {
+        const button = document.createElement('button');
+        button.type = 'button';
+        button.className = 'chapter-link' + (index === currentIndex ? ' active' : '');
+        const number = chapter.kind === 'chapter' ? String(chapter.number).padStart(2, '0') : '--';
+        button.innerHTML = `<span class="chapter-number">${number}</span><span>${chapter.title}</span>`;
+        button.addEventListener('click', () => loadChapter(index, true));
+        chapterList.appendChild(button);
+      });
+    }
+
+    function chapterAudioStart(chapter) {
+      return chapter.audioStart || 0;
+    }
+
+    async function setAudioSource(source) {
+      if (audio.dataset.rawSource === source) {
+        return false;
+      }
+      audio.dataset.rawSource = source;
+      if (location.protocol === 'file:') {
+        audio.src = source;
+        return true;
+      }
+      if (audioObjectUrls.has(source)) {
+        audio.src = audioObjectUrls.get(source);
+        return true;
+      }
+      try {
+        const response = await fetch(source);
+        if (!response.ok) {
+          throw new Error(`Unable to load audio: ${response.status}`);
+        }
+        const blob = await response.blob();
+        const objectUrl = URL.createObjectURL(blob);
+        audioObjectUrls.set(source, objectUrl);
+        audio.src = objectUrl;
+      } catch {
+        audio.src = source;
+      }
+      return true;
+    }
+
+    function seekAfterMetadata(time, autoplay = false) {
+      const startPlayback = () => {
+        try {
+          audio.currentTime = Math.max(0, time || 0);
+        } catch {
+          audio.currentTime = 0;
+        }
+        if (autoplay) {
+          audio.play().catch(() => null);
+        }
+        updateTimes();
+      };
+      if (audio.readyState < 1) {
+        audio.addEventListener('loadedmetadata', startPlayback, { once: true });
+      } else {
+        startPlayback();
+      }
+    }
+
+    async function loadChapter(index, autoplay = false, seek = true, restoreTime = null) {
+      if (currentMode !== 'en') return;
+      currentIndex = Math.max(0, Math.min(index, manifest.chapters.length - 1));
+      const chapter = manifest.chapters[currentIndex];
+      currentParagraphId = null;
+      await setAudioSource(chapter.audio);
+      chapterTitle.textContent = chapter.kind === 'chapter' ? `Chapter ${chapter.number}. ${chapter.title}` : chapter.title;
+      reader.innerHTML = '';
+      reader.classList.remove('with-screenshots');
+      if (chapter.paragraphs.length) {
+        renderPageSpread(chapter);
+      } else {
+        const node = document.createElement('p');
+        node.className = 'outro';
+        node.textContent = 'Audio outro';
+        reader.appendChild(node);
+      }
+      renderNav();
+      updateTimes();
+      if (seek) {
+        const start = Number.isFinite(restoreTime) ? restoreTime : chapterAudioStart(chapter);
+        seekAfterMetadata(start, autoplay);
+      } else if (autoplay) {
+        audio.play().catch(() => null);
+      }
+    }
+
+    function validateChineseTiming(data) {
+      if (!data || typeof data.text !== 'string' || !Array.isArray(data.words) || !data.words.length) {
+        throw new Error('Chinese timing data is missing.');
+      }
+      let previousEnd = 0;
+      data.words.forEach((word, index) => {
+        if (!Number.isFinite(word.start) || !Number.isFinite(word.end) ||
+            word.end <= word.start || !Number.isInteger(word.start_char) ||
+            !Number.isInteger(word.end_char) || word.start_char < previousEnd ||
+            word.end_char <= word.start_char || word.end_char > data.text.length) {
+          throw new Error(`Chinese timing record ${index} is invalid.`);
+        }
+        previousEnd = word.end_char;
+      });
+      return data;
+    }
+
+    async function loadChineseTiming() {
+      if (chineseTiming) return chineseTiming;
+      const response = await fetch(CHINESE_TIMING_SOURCE);
+      if (!response.ok) {
+        throw new Error(`Unable to load Chinese timing data (${response.status}).`);
+      }
+      chineseTiming = validateChineseTiming(await response.json());
+      return chineseTiming;
+    }
+
+    function appendChineseTimedRange(container, start, end) {
+      let cursor = start;
+      chineseTiming.words.forEach((word, index) => {
+        if (word.end_char <= start || word.start_char >= end) return;
+        if (word.start_char > cursor) {
+          container.append(document.createTextNode(chineseTiming.text.slice(cursor, word.start_char)));
+        }
+        const span = document.createElement('span');
+        span.className = 'tts-word';
+        span.dataset.wordIndex = String(index);
+        span.textContent = chineseTiming.text.slice(word.start_char, word.end_char);
+        container.appendChild(span);
+        chineseWordSpans[index] = span;
+        chineseWordParagraphs[index] = container;
+        cursor = word.end_char;
+      });
+      if (cursor < end) {
+        container.append(document.createTextNode(chineseTiming.text.slice(cursor, end)));
+      }
+    }
+
+    function renderChineseReader() {
+      reader.innerHTML = '';
+      reader.classList.remove('with-screenshots');
+      chineseWordSpans = [];
+      chineseWordParagraphs = [];
+      activeChineseWord = -1;
+      activeChineseParagraph = null;
+      let globalCursor = 0;
+      chineseTiming.text.split('\n\n').forEach((text, paragraphIndex) => {
+        const start = globalCursor;
+        const end = start + text.length;
+        const paragraph = document.createElement('p');
+        paragraph.className = 'paragraph';
+        paragraph.id = `zh-paragraph-${paragraphIndex}`;
+        appendChineseTimedRange(paragraph, start, end);
+        const firstWord = chineseTiming.words.find((word) => word.start_char >= start && word.start_char < end);
+        paragraph.addEventListener('click', () => {
+          audio.currentTime = firstWord?.start || 0;
+          saveChineseProgress();
+          audio.play().catch(() => null);
+        });
+        reader.appendChild(paragraph);
+        globalCursor = end + 2;
+      });
+    }
+
+    function clearChineseHighlight() {
+      if (activeChineseWord >= 0) {
+        chineseWordSpans[activeChineseWord]?.classList.remove('is-speaking');
+      }
+      activeChineseParagraph?.classList.remove('active');
+      activeChineseWord = -1;
+      activeChineseParagraph = null;
+    }
+
+    function findChineseWord(time) {
+      let low = 0;
+      let high = chineseTiming.words.length - 1;
+      let candidate = -1;
+      while (low <= high) {
+        const middle = Math.floor((low + high) / 2);
+        if (time < chineseTiming.words[middle].start) {
+          high = middle - 1;
+        } else {
+          candidate = middle;
+          low = middle + 1;
+        }
+      }
+      return candidate >= 0 && time < chineseTiming.words[candidate].end ? candidate : -1;
+    }
+
+    function updateChineseHighlight(time) {
+      const next = findChineseWord(time);
+      if (next === activeChineseWord) return;
+      clearChineseHighlight();
+      if (next < 0) return;
+      activeChineseWord = next;
+      activeChineseParagraph = chineseWordParagraphs[next];
+      chineseWordSpans[next]?.classList.add('is-speaking');
+      activeChineseParagraph?.classList.add('active');
+      activeChineseParagraph?.scrollIntoView({ block: 'center', behavior: 'smooth' });
+    }
+
+    function updateTimes() {
+      if (currentMode === 'zh') {
+        if (!chineseTiming) return;
+        const duration = Number.isFinite(audio.duration)
+          ? audio.duration
+          : chineseTiming.words[chineseTiming.words.length - 1].end;
+        const current = audio.currentTime || 0;
+        timeLabel.textContent = `${formatTime(current)} / ${formatTime(duration)}`;
+        chapterTime.textContent = `${formatTime(current)} / ${formatTime(duration)}`;
+        seekBar.value = duration ? String(Math.round((current / duration) * 1000)) : '0';
+        updateChineseHighlight(current);
+        return;
+      }
+      if (currentMode !== 'en') return;
+      const chapter = manifest.chapters[currentIndex];
+      const audioClock = audio.currentTime || 0;
+      const local = Math.max(0, audioClock - chapterAudioStart(chapter));
+      timeLabel.textContent = `${formatTime(chapter.start + local)} / ${formatTime(manifest.duration)}`;
+      chapterTime.textContent = `${formatTime(local)} / ${formatTime(chapter.duration)}`;
+      seekBar.value = chapter.duration ? String(Math.round((local / chapter.duration) * 1000)) : '0';
+      updateHighlight(audioClock);
+      const nextChapter = manifest.chapters[currentIndex + 1];
+      if (!audio.paused && nextChapter && nextChapter.audio === chapter.audio && local >= chapter.duration - 0.15) {
+        loadChapter(currentIndex + 1, true, false);
+      }
+    }
+
+    function updateHighlight(local) {
+      const chapter = manifest.chapters[currentIndex];
+      let paragraph = null;
+      for (let index = chapter.paragraphs.length - 1; index >= 0; index -= 1) {
+        const item = chapter.paragraphs[index];
+        if (local >= item.localBegin && local < item.localEnd) {
+          paragraph = item;
+          break;
+        }
+      }
+      const nextId = paragraph ? paragraph.id : null;
+      if (nextId === currentParagraphId) return;
+      if (currentParagraphId) {
+        document.getElementById(currentParagraphId)?.classList.remove('active');
+      }
+      currentParagraphId = nextId;
+      if (currentParagraphId) {
+        const node = document.getElementById(currentParagraphId);
+        node?.classList.add('active');
+        node?.scrollIntoView({ block: 'center', behavior: 'smooth' });
+        saveEnglishProgress(paragraph);
+      }
+    }
+
+    function showChineseError(error) {
+      reader.innerHTML = '';
+      const message = document.createElement('p');
+      message.className = 'reader-error';
+      message.textContent = `${error.message} Open this page through a local web server and try again.`;
+      reader.appendChild(message);
+      playButton.disabled = true;
+      seekBar.disabled = true;
+    }
+
+    function renderChineseFileFallback() {
+      document.body.classList.add('chinese-file-fallback');
+      chapterTitle.textContent = '把苦学转化为稳定发挥';
+      timeLabel.textContent = '中文朗读';
+      reader.innerHTML = '';
+      reader.classList.remove('with-screenshots');
+      reader.classList.add('chinese-file-fallback');
+      const frame = document.createElement('iframe');
+      frame.className = 'chinese-reader-frame';
+      frame.title = '中文数学学习朗读';
+      frame.src = 'math-study-read-aloud/math-study-read-aloud.html';
+      frame.allow = 'autoplay';
+      reader.appendChild(frame);
+      renderNav();
+    }
+
+    function setModeControls(mode) {
+      const isChinese = mode === 'zh';
+      document.body.classList.remove('chinese-file-fallback');
+      reader.classList.remove('chinese-file-fallback');
+      enModeButton.setAttribute('aria-pressed', String(!isChinese));
+      zhModeButton.setAttribute('aria-pressed', String(isChinese));
+      document.documentElement.lang = isChinese ? 'zh-CN' : 'en';
+      bookTitle.textContent = isChinese ? '数学学习指南' : manifest.title;
+      playButton.textContent = isChinese ? '播放' : 'Play';
+      prevButton.textContent = isChinese ? '上一段' : 'Prev';
+      nextButton.textContent = isChinese ? '下一段' : 'Next';
+      seekBar.setAttribute('aria-label', isChinese ? '朗读进度' : 'Seek');
+      prevButton.disabled = isChinese;
+      nextButton.disabled = isChinese;
+      playButton.disabled = false;
+      seekBar.disabled = false;
+    }
+
+    async function loadEnglishMode() {
+      const progress = readProgress(EN_PROGRESS_KEY);
+      const index = Number.isInteger(progress?.chapterIndex) ? progress.chapterIndex : 0;
+      const restoreTime = Number.isFinite(progress?.currentTime) ? progress.currentTime : null;
+      await loadChapter(index, false, true, restoreTime);
+    }
+
+    async function loadChineseMode() {
+      if (location.protocol === 'file:') {
+        renderChineseFileFallback();
+        return;
+      }
+      try {
+        await loadChineseTiming();
+        if (currentMode !== 'zh') return;
+        chapterTitle.textContent = '把苦学转化为稳定发挥';
+        renderChineseReader();
+        renderNav();
+        await setAudioSource(CHINESE_AUDIO_SOURCE);
+        const progress = readProgress(ZH_PROGRESS_KEY);
+        const restoreTime = Number.isFinite(progress?.currentTime) ? progress.currentTime : 0;
+        seekAfterMetadata(restoreTime, false);
+      } catch (error) {
+        showChineseError(error);
+      }
+    }
+
+    async function switchMode(mode) {
+      if (mode !== 'en' && mode !== 'zh') return;
+      if (currentMode === mode) return;
+      saveCurrentProgress();
+      audio.pause();
+      if (currentParagraphId) {
+        document.getElementById(currentParagraphId)?.classList.remove('active');
+      }
+      currentParagraphId = null;
+      clearChineseHighlight();
+      currentMode = mode;
+      localStorage.setItem(MODE_KEY, mode);
+      setModeControls(mode);
+      if (mode === 'zh') {
+        await loadChineseMode();
+      } else {
+        await loadEnglishMode();
+      }
+    }
+
+    playButton.addEventListener('click', () => {
+      if (audio.paused) {
+        audio.play().catch(() => null);
+      } else {
+        audio.pause();
+      }
+    });
+    prevButton.addEventListener('click', () => {
+      if (currentMode === 'en') loadChapter(currentIndex - 1, !audio.paused);
+    });
+    nextButton.addEventListener('click', () => {
+      if (currentMode === 'en') loadChapter(currentIndex + 1, !audio.paused);
+    });
+    seekBar.addEventListener('input', () => {
+      if (currentMode === 'zh') {
+        const duration = Number.isFinite(audio.duration)
+          ? audio.duration
+          : chineseTiming.words[chineseTiming.words.length - 1].end;
+        audio.currentTime = (Number(seekBar.value) / 1000) * duration;
+        return;
+      }
+      const chapter = manifest.chapters[currentIndex];
+      audio.currentTime = chapterAudioStart(chapter) + (Number(seekBar.value) / 1000) * chapter.duration;
+    });
+    audio.addEventListener('play', () => {
+      playButton.textContent = currentMode === 'zh' ? '暂停' : 'Pause';
+    });
+    audio.addEventListener('pause', () => {
+      playButton.textContent = currentMode === 'zh' ? '播放' : 'Play';
+      saveCurrentProgress();
+    });
+    audio.addEventListener('timeupdate', updateTimes);
+    audio.addEventListener('loadedmetadata', updateTimes);
+    audio.addEventListener('ended', () => {
+      saveCurrentProgress();
+      if (currentMode === 'en' && currentIndex < manifest.chapters.length - 1) {
+        loadChapter(currentIndex + 1, true);
+      }
+    });
+    enModeButton.addEventListener('click', () => switchMode('en'));
+    zhModeButton.addEventListener('click', () => switchMode('zh'));
+    window.addEventListener('beforeunload', saveCurrentProgress);
+
+    switchMode(localStorage.getItem(MODE_KEY) === 'zh' ? 'zh' : 'en');
+  </script>
+</body>
+</html>
